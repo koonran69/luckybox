@@ -1,0 +1,1 @@
+<option @selected($isSelected()) value="{{ $value }}" {{ $attributes }}>{{ $title }}</option>

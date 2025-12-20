@@ -1,0 +1,125 @@
+@import "@tabler/core/dist/css/tabler.min.css";
+
+:root {
+    --color-2: rgba(90, 88, 84, 1);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    overflow: hidden;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1440px;
+}
+
+.box {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.box .box-image {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.box .image-cover {
+    display: block;
+    padding-top: 100%;
+}
+
+.image-cover img {
+    bottom: 0;
+    font-family: "object-fit: cover;";
+    height: 100%;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+/* Thêm transition cho cả vào/ra */
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+/* Bắt đầu ẩn -> hiện */
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  opacity: 0;
+  max-height: 0;
+}
+
+/* Hiện hoàn toàn */
+.slide-fade-enter-to,
+.slide-fade-leave-from {
+  opacity: 1;
+  max-height: 300px; /* tuỳ anh set theo chiều cao menu */
+}
+
+/* transition cho enter & leave */
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+/* khi bắt đầu hiển thị */
+.slide-down-enter-from,
+.slide-down-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* khi đã hiển thị xong */
+.slide-down-enter-to,
+.slide-down-leave-from {
+  max-height: 500px; /* set cao hơn chiều cao thực tế của menu */
+  opacity: 1;
+}
+
+/* banner */
+
+.banner {
+    height: 763px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .bg-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.banner .bg-banner img {
+    font-family: "object-fit: cover;";
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 50% 50%;
+    object-position: 50% 50%;
+    width: 100%;
+}
+
