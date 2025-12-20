@@ -11,6 +11,7 @@ use Domains\Core\Enums\Gender;
 use Domains\Core\Traits\ModelTrait;
 use Domains\Order\Models\Order;
 use Domains\Web\Models\RewardHistory;
+use Domains\Web\Models\SpinTicket;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -62,5 +63,10 @@ class User extends Authenticatable
     public function reward_history()
     {
         return $this->hasMany(RewardHistory::class, 'user_id');
+    }
+
+    public function spin_ticket()
+    {
+        return $this->hasMany(SpinTicket::class, 'user_id');
     }
 }

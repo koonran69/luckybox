@@ -5,78 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/Core/Enums/DefaultActive.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/Core/Enums/DefaultShowHomepage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/Core/Services/FileUploadService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/Web/Enums/RewardHistoryStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domains/Web/Models/RewardHistory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/data-vi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/en/validate_checkout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/vi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/vi/enums.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/vi/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-instax-mini-12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-mi-band-10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-u-pillow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/InputError.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/input/InputPassword.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/input/InputQuantity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/input/InputRating.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/input/InputSelectSearch.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/layouts/Breadcrumb.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/layouts/BreadcrumbPeyment.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ui/layouts/BreadcrumbProducts.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/providers.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/providers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2025_09_23_081702_create_blogs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_09_23_081702_create_blogs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Core/Enums/Setting/SettingGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Core/Enums/Setting/SettingGroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Core/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Core/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Core/Models/Setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Core/Models/Setting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Core/Repositories/EloquentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Core/Repositories/EloquentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Core/Supports/Breadcrumb.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Core/Supports/Breadcrumb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Dashboard/Http/Controllers/Cms/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Dashboard/Http/Controllers/Cms/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Dashboard/Reports/OrderReport.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Localization/Models/Locale.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Localization/Models/Locale.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Localization/Services/LanguageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Localization/Services/LanguageService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/Web/Enums/RewardCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/Web/Models/Reward.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/Web/Models/SpinTicket.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/Web/Services/RewardService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2025_12_20_050749_create_vouchers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_12_20_050749_create_vouchers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domains/User/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/User/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Enums/RewardHistoryStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Enums/RewardHistoryStatus.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Requests/LoginRequest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/vi_VN/enums.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Area/Http/Controllers/SearchAreaController.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Area/Http/Controllers/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Area/Http/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Area/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Dashboard/Http/Controllers/Cms/DashboardController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Dashboard/Http/Controllers/Cms/DashboardController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Order/Http/Controllers/Cms/OrderController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Order/Http/Controllers/Cms/OrderController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/CategoryController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/CategoryController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/ProductController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/ProductController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/ProductReviewController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/ProductReviewController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/ProductVariantController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Product/Http/Controllers/Cms/ProductVariantController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Voucher/Http/Controllers/Cms/VoucherController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Voucher/Http/Controllers/Cms/VoucherController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Models/RewardHistory.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Models/RewardHistory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Livewire/Features/SupportFileUploads/FileUploadController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Livewire/Features/SupportFileUploads/FileUploadController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ui/input/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ui/input/Input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/ui/input/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ui/input/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/order/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/order/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/product/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/product/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/product_category/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/product_category/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/product_review/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/product_review/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/product_variant/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/product_variant/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/voucher/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/voucher/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/lib/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lib/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/livewire/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/livewire/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/search_area/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/types/index.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -249,33 +196,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev/the-v1",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Applications/MAMP/htdocs/luckybox/domains/Web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev/the-v1&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/domains/Web&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/domains/Web" />
+      <recent name="$PROJECT_DIR$/domains/Web/Enums" />
       <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$/domains" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/resources/js/components" />
     </key>
   </component>
   <component name="RunManager">
@@ -300,7 +247,8 @@
       <option name="presentableId" value="Default" />
       <updated>1766205268879</updated>
       <workItem from="1766205269927" duration="4787000" />
-      <workItem from="1766210687437" duration="12409000" />
+      <workItem from="1766210687437" duration="18445000" />
+      <workItem from="1766229927938" duration="4504000" />
     </task>
     <servers />
   </component>
@@ -315,10 +263,14 @@
           <line>10</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/domains/Web/Models/Reward.php</url>
+          <line>16</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue</url>
-          <line>22</line>
-          <properties lambdaOrdinal="-1" />
+          <line>23</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

@@ -24,14 +24,14 @@ return new class extends Migration
             // Giá trị hiển thị (không dùng cho logic)
             $table->string('display_value')->nullable(); // VD: "02 chỉ vàng", "1.890.000 VNĐ"
             // Số lượng
-            $table->integer('total_quantity')->default(0);   // Tổng giải
-            $table->integer('remaining_quantity')->default(0); // Còn lại
+            $table->integer('total_quantity')->default(0);   // Tổng giải (-1 là không giới hạn)
+            $table->integer('remaining_quantity')->default(0); // Còn lại (-1 là không giới hạn)
             // Tỉ lệ
-            $table->integer('weight')->default(1); // Trọng số quay
+            $table->integer('weight')->default(1); // Tỉ lệ quay (Tỉ lệ (%) = weight / tổng_weight × 100)
             // Thứ hạng
             $table->integer('rank')->nullable(); // 1 = giải nhất, 2 = giải nhì
             // Trạng thái
-            $table->boolean('is_active')->default(true);
+            $table->boolean('is_active')->default(\Domains\Core\Enums\DefaultActive::Active);
             $table->timestamps();
         });
         //Người dùng điền form xong sẽ được 1 lần mở box

@@ -1,6 +1,6 @@
 <?php
 
-namespace Domains\Core\Enums;
+namespace Domains\Web\Enums;
 
 use Domains\Core\Supports\Enum;
 

@@ -10,6 +10,31 @@ export interface BreadcrumbItem {
     href: string;
 }
 
+export type RewardData = {
+    id: number;
+    image: string;
+    name: string;
+    description: string;
+    category: string;
+    display_value: string;
+    total_quantity: number;
+    remaining_quantity: number;
+    weight: number;
+    rank: number;
+    is_active: number;
+}
+
+export type RewardHistory = {
+    id: number;
+    code: string;
+    reward_id: number;
+    spin_ticket_id: number;
+    status: string;
+    box_position: number | null;
+    created_at: string;
+    reward: Reward  | null;
+}
+
 export type StoreData = {
     contact_email: string;
     contact_facebook: string;

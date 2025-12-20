@@ -10,6 +10,7 @@ Route::middleware(Domains\Localization\Http\Middleware\SetLocaleMiddleware::clas
 
     Route::get('/lucky-box', [Domains\Web\Http\Controllers\Home\HomeController::class, 'luckyBoxIndex'])->name('luckyBoxIndex');
 
+    Route::post('/submit-open-box', [Domains\Web\Http\Controllers\Home\HomeController::class, 'submitOpenBox'])->name('submitOpenBox');
 
     foreach (glob(__DIR__.'/web/*.php') as $routeFile) {
         require $routeFile;

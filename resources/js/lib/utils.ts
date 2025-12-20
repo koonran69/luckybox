@@ -13,3 +13,18 @@ export function urlIsActive(urlToCheck: NonNullable<InertiaLinkProps['href']>, c
 export function toUrl(href: NonNullable<InertiaLinkProps['href']>) {
     return typeof href === 'string' ? href : href?.url;
 }
+
+export function normalizePath(path: string): string {
+    if (!path) return '';
+    return path.startsWith('/') ? path : `/${path}`;
+}
+
+
+export function asset(path: string) {
+
+    if (/^(https?:)?\/\//.test(path))
+    {
+        return path;
+    }
+    return import.meta.env.VITE_APP_ASSET + normalizePath(path);
+}

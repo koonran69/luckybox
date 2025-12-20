@@ -2,6 +2,7 @@
 import HomeController from '@/actions/Domains/Web/Http/Controllers/Home/HomeController';
 import InputError from '@/components/ui/InputError.vue';
 import { Form, Link, useForm } from '@inertiajs/vue3';
+import { toast } from 'vue-sonner';
 import { ref } from 'vue';
 interface Props {
   genders: Record<string, string>
@@ -25,6 +26,13 @@ function submit() {
     preserveScroll: true,
     onSuccess: () => {
       form.reset()
+    },
+    onError: (errors) => {
+      Object.values(errors).forEach((msg: any, index) => {
+        toast.error(msg as string, {
+          id: `error-${index}-${Date.now()}`,
+        });
+      });
     },
   })
 }

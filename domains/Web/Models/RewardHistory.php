@@ -2,7 +2,7 @@
 
 namespace Domains\Web\Models;
 
-use Domains\Core\Enums\RewardHistoryStatus;
+use Domains\Web\Enums\RewardHistoryStatus;
 use Domains\Core\Supports\Eloquent\BaseModel;
 use Domains\User\Models\User;
 
@@ -28,5 +28,13 @@ class RewardHistory extends BaseModel
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function reward(){
+        return $this->belongsTo(Reward::class, 'reward_id');
+    }
+
+    public function spin_ticket(){
+        return $this->belongsTo(SpinTicket::class, 'spin_ticket_id');
     }
 }

@@ -17,7 +17,7 @@ class RewardSeeder extends Seeder
         $rewards = [
             [
                 'code' => 'FIRST_PRIZE_GOLD',
-                'image' => '/images/reward-gold.png',
+                'image' => '/assets/images/reward-gold.png',
                 'name' => 'Giải Nhất – 02 chỉ vàng',
                 'description' => '1000 cơ hội quay trúng thưởng chỉ vàng – 02 chỉ vàng',
                 'category' => 'physical',
@@ -32,7 +32,7 @@ class RewardSeeder extends Seeder
             ],
             [
                 'code' => 'SECOND_PRIZE_CAMERA',
-                'image' => '/images/reward-instax-mini-12.png',
+                'image' => '/assets/images/reward-instax-mini-12.png',
                 'name' => 'Giải Nhì – Máy ảnh Fujifilm Instax Mini 12',
                 'description' => '01 Máy ảnh Fujifilm Instax Mini 12',
                 'category' => 'physical',
@@ -47,7 +47,7 @@ class RewardSeeder extends Seeder
             ],
             [
                 'code' => 'THIRD_PRIZE_MIBAND',
-                'image' => '/images/reward-mi-band-10.png',
+                'image' => '/assets/images/reward-mi-band-10.png',
                 'name' => 'Giải Ba – Xiaomi Mi Band 10',
                 'description' => '01 Đồng hồ thông minh Xiaomi Mi Band 10',
                 'category' => 'physical',
@@ -62,7 +62,7 @@ class RewardSeeder extends Seeder
             ],
             [
                 'code' => 'CONSOLATION_PILLOW',
-                'image' => '/images/reward-u-pillow.png',
+                'image' => '/assets/images/reward-u-pillow.png',
                 'name' => 'Giải Khuyến Khích – Gối chữ U Bamozo',
                 'description' => '01 Gối chữ U Bamozo',
                 'category' => 'physical',
