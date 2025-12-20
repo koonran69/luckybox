@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../wayfinder'
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::index
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:31
+* @see [unknown]:0
 * @route '/cms/san-pham'
 */
 export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::index
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:31
+* @see [unknown]:0
 * @route '/cms/san-pham'
 */
 index.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::index
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:31
+* @see [unknown]:0
 * @route '/cms/san-pham'
 */
 index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -35,7 +35,7 @@ index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::index
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:31
+* @see [unknown]:0
 * @route '/cms/san-pham'
 */
 index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -45,7 +45,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::index
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:31
+* @see [unknown]:0
 * @route '/cms/san-pham'
 */
 const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -55,7 +55,7 @@ const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => (
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::index
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:31
+* @see [unknown]:0
 * @route '/cms/san-pham'
 */
 indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -65,7 +65,7 @@ indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::index
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:31
+* @see [unknown]:0
 * @route '/cms/san-pham'
 */
 indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -82,7 +82,7 @@ index.form = indexForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::create
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/create'
 */
 export const create = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -97,7 +97,7 @@ create.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::create
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/create'
 */
 create.url = (options?: RouteQueryOptions) => {
@@ -106,7 +106,7 @@ create.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::create
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/create'
 */
 create.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -116,7 +116,7 @@ create.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::create
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/create'
 */
 create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -126,7 +126,7 @@ create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::create
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/create'
 */
 const createForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -136,7 +136,7 @@ const createForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::create
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/create'
 */
 createForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -146,7 +146,7 @@ createForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::create
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/create'
 */
 createForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -163,7 +163,7 @@ create.form = createForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::store
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/store'
 */
 export const store = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -178,7 +178,7 @@ store.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::store
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/store'
 */
 store.url = (options?: RouteQueryOptions) => {
@@ -187,7 +187,7 @@ store.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::store
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/store'
 */
 store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -197,7 +197,7 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::store
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/store'
 */
 const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -207,7 +207,7 @@ const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::store
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/store'
 */
 storeForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -219,7 +219,7 @@ store.form = storeForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::update
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:54
+* @see [unknown]:0
 * @route '/cms/san-pham/update'
 */
 export const update = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -234,7 +234,7 @@ update.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::update
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:54
+* @see [unknown]:0
 * @route '/cms/san-pham/update'
 */
 update.url = (options?: RouteQueryOptions) => {
@@ -243,7 +243,7 @@ update.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::update
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:54
+* @see [unknown]:0
 * @route '/cms/san-pham/update'
 */
 update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -253,7 +253,7 @@ update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::update
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:54
+* @see [unknown]:0
 * @route '/cms/san-pham/update'
 */
 const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -268,7 +268,7 @@ const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> =>
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::update
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:54
+* @see [unknown]:0
 * @route '/cms/san-pham/update'
 */
 updateForm.put = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -285,7 +285,7 @@ update.form = updateForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:38
+* @see [unknown]:0
 * @route '/cms/san-pham/edit/{id}'
 */
 export const edit = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -300,7 +300,7 @@ edit.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:38
+* @see [unknown]:0
 * @route '/cms/san-pham/edit/{id}'
 */
 edit.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -327,7 +327,7 @@ edit.url = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:38
+* @see [unknown]:0
 * @route '/cms/san-pham/edit/{id}'
 */
 edit.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -337,7 +337,7 @@ edit.get = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:38
+* @see [unknown]:0
 * @route '/cms/san-pham/edit/{id}'
 */
 edit.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -347,7 +347,7 @@ edit.head = (args: { id: string | number } | [id: string | number ] | string | n
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:38
+* @see [unknown]:0
 * @route '/cms/san-pham/edit/{id}'
 */
 const editForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -357,7 +357,7 @@ const editForm = (args: { id: string | number } | [id: string | number ] | strin
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:38
+* @see [unknown]:0
 * @route '/cms/san-pham/edit/{id}'
 */
 editForm.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -367,7 +367,7 @@ editForm.get = (args: { id: string | number } | [id: string | number ] | string 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:38
+* @see [unknown]:0
 * @route '/cms/san-pham/edit/{id}'
 */
 editForm.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -384,7 +384,7 @@ edit.form = editForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:75
+* @see [unknown]:0
 * @route '/cms/san-pham/delete/{id}'
 */
 export const deleteMethod = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -399,7 +399,7 @@ deleteMethod.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:75
+* @see [unknown]:0
 * @route '/cms/san-pham/delete/{id}'
 */
 deleteMethod.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -426,7 +426,7 @@ deleteMethod.url = (args: { id: string | number } | [id: string | number ] | str
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:75
+* @see [unknown]:0
 * @route '/cms/san-pham/delete/{id}'
 */
 deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -436,7 +436,7 @@ deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:75
+* @see [unknown]:0
 * @route '/cms/san-pham/delete/{id}'
 */
 const deleteMethodForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -451,7 +451,7 @@ const deleteMethodForm = (args: { id: string | number } | [id: string | number ]
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:75
+* @see [unknown]:0
 * @route '/cms/san-pham/delete/{id}'
 */
 deleteMethodForm.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -468,7 +468,7 @@ deleteMethod.form = deleteMethodForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::search_select
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/search-select'
 */
 export const search_select = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -483,7 +483,7 @@ search_select.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::search_select
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/search-select'
 */
 search_select.url = (options?: RouteQueryOptions) => {
@@ -492,7 +492,7 @@ search_select.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::search_select
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/search-select'
 */
 search_select.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -502,7 +502,7 @@ search_select.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::search_select
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/search-select'
 */
 search_select.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -512,7 +512,7 @@ search_select.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => (
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::search_select
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/search-select'
 */
 const search_selectForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -522,7 +522,7 @@ const search_selectForm = (options?: RouteQueryOptions): RouteFormDefinition<'ge
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::search_select
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/search-select'
 */
 search_selectForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -532,7 +532,7 @@ search_selectForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::search_select
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham/search-select'
 */
 search_selectForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -549,7 +549,7 @@ search_select.form = search_selectForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::sync_hrv
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:61
+* @see [unknown]:0
 * @route '/cms/san-pham/sync-hrv'
 */
 export const sync_hrv = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -564,7 +564,7 @@ sync_hrv.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::sync_hrv
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:61
+* @see [unknown]:0
 * @route '/cms/san-pham/sync-hrv'
 */
 sync_hrv.url = (options?: RouteQueryOptions) => {
@@ -573,7 +573,7 @@ sync_hrv.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::sync_hrv
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:61
+* @see [unknown]:0
 * @route '/cms/san-pham/sync-hrv'
 */
 sync_hrv.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -583,7 +583,7 @@ sync_hrv.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::sync_hrv
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:61
+* @see [unknown]:0
 * @route '/cms/san-pham/sync-hrv'
 */
 const sync_hrvForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -593,7 +593,7 @@ const sync_hrvForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductController::sync_hrv
-* @see domains/Product/Http/Controllers/Cms/ProductController.php:61
+* @see [unknown]:0
 * @route '/cms/san-pham/sync-hrv'
 */
 sync_hrvForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({

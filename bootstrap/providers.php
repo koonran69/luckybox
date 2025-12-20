@@ -11,17 +11,9 @@ return [
 
     Domains\Cms\Providers\CmsServiceProvider::class,
 
-    Domains\Haravan\Providers\HaravanServiceProvider::class,
-
-    Domains\Product\Providers\ProductServiceProvider::class,
-
-    Domains\Voucher\Providers\VoucherServiceProvider::class,
-
-    Domains\Order\Providers\OrderServiceProvider::class,
-
-    Domains\Area\Providers\AreaServiceProvider::class,
-    
     Domains\DataStore\Providers\DataStoreServiceProvider::class,
+
+    Domains\Web\Providers\WebServiceProvider::class,
 
     
 ];

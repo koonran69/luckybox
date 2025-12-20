@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../../../../wayfinder'
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::update
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:25
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/update'
 */
 export const update = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -16,7 +16,7 @@ update.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::update
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:25
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/update'
 */
 update.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ update.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::update
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:25
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/update'
 */
 update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -35,7 +35,7 @@ update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::update
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:25
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/update'
 */
 const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -50,7 +50,7 @@ const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> =>
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::update
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:25
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/update'
 */
 updateForm.put = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -67,7 +67,7 @@ update.form = updateForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:18
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/edit/{id}'
 */
 export const edit = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -82,7 +82,7 @@ edit.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:18
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/edit/{id}'
 */
 edit.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -109,7 +109,7 @@ edit.url = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:18
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/edit/{id}'
 */
 edit.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -119,7 +119,7 @@ edit.get = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:18
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/edit/{id}'
 */
 edit.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -129,7 +129,7 @@ edit.head = (args: { id: string | number } | [id: string | number ] | string | n
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:18
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/edit/{id}'
 */
 const editForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -139,7 +139,7 @@ const editForm = (args: { id: string | number } | [id: string | number ] | strin
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:18
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/edit/{id}'
 */
 editForm.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -149,7 +149,7 @@ editForm.get = (args: { id: string | number } | [id: string | number ] | string 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:18
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/edit/{id}'
 */
 editForm.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -166,7 +166,7 @@ edit.form = editForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/delete/{id}'
 */
 export const deleteMethod = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -181,7 +181,7 @@ deleteMethod.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/delete/{id}'
 */
 deleteMethod.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -208,7 +208,7 @@ deleteMethod.url = (args: { id: string | number } | [id: string | number ] | str
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/delete/{id}'
 */
 deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -218,7 +218,7 @@ deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/delete/{id}'
 */
 const deleteMethodForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -233,7 +233,7 @@ const deleteMethodForm = (args: { id: string | number } | [id: string | number ]
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/delete/{id}'
 */
 deleteMethodForm.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -250,7 +250,7 @@ deleteMethod.form = deleteMethodForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::syncHrv
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/sync-hrv'
 */
 export const syncHrv = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -265,7 +265,7 @@ syncHrv.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::syncHrv
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/sync-hrv'
 */
 syncHrv.url = (options?: RouteQueryOptions) => {
@@ -274,7 +274,7 @@ syncHrv.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::syncHrv
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/sync-hrv'
 */
 syncHrv.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -284,7 +284,7 @@ syncHrv.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::syncHrv
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/sync-hrv'
 */
 const syncHrvForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -294,7 +294,7 @@ const syncHrvForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> =
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductVariantController::syncHrv
-* @see domains/Product/Http/Controllers/Cms/ProductVariantController.php:0
+* @see [unknown]:0
 * @route '/cms/san-pham-bien-the/sync-hrv'
 */
 syncHrvForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({

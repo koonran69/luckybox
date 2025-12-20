@@ -13,4 +13,6 @@ enum SettingGroup: int
     case Contact = 20;
 
     case Seo = 30;
+
+    case Home = 40;
 }

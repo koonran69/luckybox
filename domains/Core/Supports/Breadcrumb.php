@@ -41,4 +41,14 @@ class Breadcrumb
         ];
         return $this;
     }
+
+    public function addByPayment(string $label, string $url = '',bool $current=false): Breadcrumb
+    {
+        $this->breadcrumb[] = [
+            'label' => $label,
+            'url' => $url,
+            'current' => $current
+        ];
+        return $this;
+    }
 }

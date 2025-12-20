@@ -3,6 +3,7 @@
 namespace Domains\Core\Repositories;
 
 use Domains\Core\Repositories\EloquentRepositoryInterface;
+use Illuminate\Support\Facades\Log;
 
 abstract class EloquentRepository implements EloquentRepositoryInterface
 {
@@ -81,7 +82,11 @@ abstract class EloquentRepository implements EloquentRepositoryInterface
 
         $this->applyFilters($filter);
 
-        $this->instance = $this->instance->with($relations)->first();
+        if(count($relations))
+        {
+            $this->instance = $this->instance->with($relations);
+        }
+        $this->instance = $this->instance->first();
 
         return $this->instance;
     }

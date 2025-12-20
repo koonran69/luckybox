@@ -4,6 +4,8 @@ namespace Domains\Localization\Services;
 
 use Domains\Localization\Models\Currency;
 use Domains\Localization\Models\Language;
+use Domains\Localization\Models\Locale;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cache;
 
@@ -11,18 +13,33 @@ class LanguageService
 {
     const CACHE_ALL = 'cache_languages_all';
 
+    public static function getLocaleCodeFromReq()
+    {
+        return static::cleanLocaleCode(request('locale_code'));
+    }
     const CACHE_DEFAULT = 'cache_languages_default';
 
+    public static function cleanLocaleCode($locale_code)
+    {
+        $code = static::getLanguages()->where('code', $locale_code)->first();
+
+        if($code)
+        {
+            return $code->code;
+        }
+
+        return static::getDefault()->code;
+    }
     public static function applyLanguage(): void
     {
         $locale = session('locale', static::getCodeDefault());
-        
+
         App::setLocale($locale);
     }
 
-    public static function swichLanguage($locale = null)
+    public static function switchLanguage($locale = null)
     {
-        $locale = static::cleanLocale($locale);
+        $locale = static::cleanLocaleCode($locale);
 
         session(['locale' => $locale]);
 
@@ -61,12 +78,12 @@ class LanguageService
 
     public static function getLocaleDefault()
     {
-        return static::getDefault()->locale->locale;
+        return static::getDefault()->locale;
     }
 
     public static function getCodeDefault()
     {
-        return static::getDefault()->locale->code;
+        return static::getDefault()->code;
     }
 
     public static function getCurrent(): Language
@@ -100,39 +117,21 @@ class LanguageService
 
     public static function getLanguageLocales(): array
     {
-        $locale = [];
-
-        foreach(static::getLanguages() as $lang)
-        {
-            array_push($locale, $lang->locale->locale);
-        }
-        
-        return $locale;
+        return static::getLanguages()->pluck('locale')->toArray();
     }
 
     public static function getLanguageCodes(): array
     {
-        $code = [];
-
-        foreach(static::getLanguages() as $lang)
-        {
-            array_push($code, $lang->locale->code);
-        }
-
-        return $code;
+        return static::getLanguages()->pluck('code')->toArray();
     }
 
-    public static function getLanguages()
+    public static function getLanguages(): Collection
     {
-        return Cache::rememberForever(self::CACHE_ALL, function () {
-            return Language::with(['locale', 'currency'])->get();
-        });
+        return Locale::getLanguages();
     }
 
-    public static function getDefault(): Language
+    public static function getDefault(): Locale
     {
-        return Cache::rememberForever(self::CACHE_DEFAULT, function () {
-            return Language::where('is_default', true)->with(['locale', 'currency'])->first();
-        });
+        return Locale::getDefault();
     }
 }

@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../../../../wayfinder'
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::index
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:24
+* @see [unknown]:0
 * @route '/cms/don-hang'
 */
 export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index.definition = {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::index
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:24
+* @see [unknown]:0
 * @route '/cms/don-hang'
 */
 index.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::index
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:24
+* @see [unknown]:0
 * @route '/cms/don-hang'
 */
 index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -35,7 +35,7 @@ index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::index
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:24
+* @see [unknown]:0
 * @route '/cms/don-hang'
 */
 index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -45,7 +45,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::index
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:24
+* @see [unknown]:0
 * @route '/cms/don-hang'
 */
 const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -55,7 +55,7 @@ const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => (
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::index
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:24
+* @see [unknown]:0
 * @route '/cms/don-hang'
 */
 indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -65,7 +65,7 @@ indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::index
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:24
+* @see [unknown]:0
 * @route '/cms/don-hang'
 */
 indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -82,7 +82,7 @@ index.form = indexForm
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::create
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/create'
 */
 export const create = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -97,7 +97,7 @@ create.definition = {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::create
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/create'
 */
 create.url = (options?: RouteQueryOptions) => {
@@ -106,7 +106,7 @@ create.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::create
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/create'
 */
 create.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -116,7 +116,7 @@ create.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::create
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/create'
 */
 create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -126,7 +126,7 @@ create.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::create
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/create'
 */
 const createForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -136,7 +136,7 @@ const createForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => 
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::create
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/create'
 */
 createForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -146,7 +146,7 @@ createForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::create
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/create'
 */
 createForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -163,7 +163,7 @@ create.form = createForm
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::exportExcel
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/export-excel'
 */
 export const exportExcel = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -178,7 +178,7 @@ exportExcel.definition = {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::exportExcel
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/export-excel'
 */
 exportExcel.url = (options?: RouteQueryOptions) => {
@@ -187,7 +187,7 @@ exportExcel.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::exportExcel
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/export-excel'
 */
 exportExcel.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -197,7 +197,7 @@ exportExcel.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::exportExcel
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/export-excel'
 */
 exportExcel.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -207,7 +207,7 @@ exportExcel.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::exportExcel
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/export-excel'
 */
 const exportExcelForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -217,7 +217,7 @@ const exportExcelForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::exportExcel
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/export-excel'
 */
 exportExcelForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -227,7 +227,7 @@ exportExcelForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> 
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::exportExcel
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/export-excel'
 */
 exportExcelForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -244,7 +244,7 @@ exportExcel.form = exportExcelForm
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::store
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/store'
 */
 export const store = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -259,7 +259,7 @@ store.definition = {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::store
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/store'
 */
 store.url = (options?: RouteQueryOptions) => {
@@ -268,7 +268,7 @@ store.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::store
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/store'
 */
 store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -278,7 +278,7 @@ store.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::store
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/store'
 */
 const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -288,7 +288,7 @@ const storeForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => 
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::store
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:0
+* @see [unknown]:0
 * @route '/cms/don-hang/store'
 */
 storeForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -300,7 +300,7 @@ store.form = storeForm
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::update
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:92
+* @see [unknown]:0
 * @route '/cms/don-hang/update'
 */
 export const update = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -315,7 +315,7 @@ update.definition = {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::update
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:92
+* @see [unknown]:0
 * @route '/cms/don-hang/update'
 */
 update.url = (options?: RouteQueryOptions) => {
@@ -324,7 +324,7 @@ update.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::update
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:92
+* @see [unknown]:0
 * @route '/cms/don-hang/update'
 */
 update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -334,7 +334,7 @@ update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::update
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:92
+* @see [unknown]:0
 * @route '/cms/don-hang/update'
 */
 const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -349,7 +349,7 @@ const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> =>
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::update
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:92
+* @see [unknown]:0
 * @route '/cms/don-hang/update'
 */
 updateForm.put = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -366,7 +366,7 @@ update.form = updateForm
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::edit
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:77
+* @see [unknown]:0
 * @route '/cms/don-hang/edit/{id}'
 */
 export const edit = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -381,7 +381,7 @@ edit.definition = {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::edit
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:77
+* @see [unknown]:0
 * @route '/cms/don-hang/edit/{id}'
 */
 edit.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -408,7 +408,7 @@ edit.url = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::edit
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:77
+* @see [unknown]:0
 * @route '/cms/don-hang/edit/{id}'
 */
 edit.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -418,7 +418,7 @@ edit.get = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::edit
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:77
+* @see [unknown]:0
 * @route '/cms/don-hang/edit/{id}'
 */
 edit.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -428,7 +428,7 @@ edit.head = (args: { id: string | number } | [id: string | number ] | string | n
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::edit
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:77
+* @see [unknown]:0
 * @route '/cms/don-hang/edit/{id}'
 */
 const editForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -438,7 +438,7 @@ const editForm = (args: { id: string | number } | [id: string | number ] | strin
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::edit
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:77
+* @see [unknown]:0
 * @route '/cms/don-hang/edit/{id}'
 */
 editForm.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -448,7 +448,7 @@ editForm.get = (args: { id: string | number } | [id: string | number ] | string 
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::edit
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:77
+* @see [unknown]:0
 * @route '/cms/don-hang/edit/{id}'
 */
 editForm.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -465,7 +465,7 @@ edit.form = editForm
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::deleteMethod
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:120
+* @see [unknown]:0
 * @route '/cms/don-hang/delete/{id}'
 */
 export const deleteMethod = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -480,7 +480,7 @@ deleteMethod.definition = {
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::deleteMethod
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:120
+* @see [unknown]:0
 * @route '/cms/don-hang/delete/{id}'
 */
 deleteMethod.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -507,7 +507,7 @@ deleteMethod.url = (args: { id: string | number } | [id: string | number ] | str
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::deleteMethod
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:120
+* @see [unknown]:0
 * @route '/cms/don-hang/delete/{id}'
 */
 deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -517,7 +517,7 @@ deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | 
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::deleteMethod
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:120
+* @see [unknown]:0
 * @route '/cms/don-hang/delete/{id}'
 */
 const deleteMethodForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -532,7 +532,7 @@ const deleteMethodForm = (args: { id: string | number } | [id: string | number ]
 
 /**
 * @see \Domains\Order\Http\Controllers\Cms\OrderController::deleteMethod
-* @see domains/Order/Http/Controllers/Cms/OrderController.php:120
+* @see [unknown]:0
 * @route '/cms/don-hang/delete/{id}'
 */
 deleteMethodForm.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({

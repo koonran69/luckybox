@@ -21,7 +21,7 @@ import user from './user'
 import voucher from './voucher'
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::dashboard
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 export const dashboard = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -36,7 +36,7 @@ dashboard.definition = {
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::dashboard
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 dashboard.url = (options?: RouteQueryOptions) => {
@@ -45,7 +45,7 @@ dashboard.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::dashboard
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 dashboard.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -55,7 +55,7 @@ dashboard.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::dashboard
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 dashboard.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -65,7 +65,7 @@ dashboard.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::dashboard
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 const dashboardForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -75,7 +75,7 @@ const dashboardForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> 
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::dashboard
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 dashboardForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -85,7 +85,7 @@ dashboardForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> =>
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::dashboard
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 dashboardForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

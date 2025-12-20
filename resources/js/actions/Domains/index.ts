@@ -1,4 +1,3 @@
-import Area from './Area'
 import Web from './Web'
 import Dashboard from './Dashboard'
 import Admin from './Admin'
@@ -12,7 +11,6 @@ import User from './User'
 import Voucher from './Voucher'
 
 const Domains = {
-    Area: Object.assign(Area, Area),
     Web: Object.assign(Web, Web),
     Dashboard: Object.assign(Dashboard, Dashboard),
     Admin: Object.assign(Admin, Admin),

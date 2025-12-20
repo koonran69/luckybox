@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition, applyUrlDefaults } from './../../../../../../wayfinder'
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::index
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:20
+* @see [unknown]:0
 * @route '/cms/danh-gia'
 */
 export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::index
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:20
+* @see [unknown]:0
 * @route '/cms/danh-gia'
 */
 index.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::index
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:20
+* @see [unknown]:0
 * @route '/cms/danh-gia'
 */
 index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -35,7 +35,7 @@ index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::index
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:20
+* @see [unknown]:0
 * @route '/cms/danh-gia'
 */
 index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -45,7 +45,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::index
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:20
+* @see [unknown]:0
 * @route '/cms/danh-gia'
 */
 const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -55,7 +55,7 @@ const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => (
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::index
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:20
+* @see [unknown]:0
 * @route '/cms/danh-gia'
 */
 indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -65,7 +65,7 @@ indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::index
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:20
+* @see [unknown]:0
 * @route '/cms/danh-gia'
 */
 indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -82,7 +82,7 @@ index.form = indexForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:30
+* @see [unknown]:0
 * @route '/cms/danh-gia/edit/{id}'
 */
 export const edit = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -97,7 +97,7 @@ edit.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:30
+* @see [unknown]:0
 * @route '/cms/danh-gia/edit/{id}'
 */
 edit.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -124,7 +124,7 @@ edit.url = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:30
+* @see [unknown]:0
 * @route '/cms/danh-gia/edit/{id}'
 */
 edit.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -134,7 +134,7 @@ edit.get = (args: { id: string | number } | [id: string | number ] | string | nu
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:30
+* @see [unknown]:0
 * @route '/cms/danh-gia/edit/{id}'
 */
 edit.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -144,7 +144,7 @@ edit.head = (args: { id: string | number } | [id: string | number ] | string | n
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:30
+* @see [unknown]:0
 * @route '/cms/danh-gia/edit/{id}'
 */
 const editForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -154,7 +154,7 @@ const editForm = (args: { id: string | number } | [id: string | number ] | strin
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:30
+* @see [unknown]:0
 * @route '/cms/danh-gia/edit/{id}'
 */
 editForm.get = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -164,7 +164,7 @@ editForm.get = (args: { id: string | number } | [id: string | number ] | string 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::edit
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:30
+* @see [unknown]:0
 * @route '/cms/danh-gia/edit/{id}'
 */
 editForm.head = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -181,7 +181,7 @@ edit.form = editForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::update
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:39
+* @see [unknown]:0
 * @route '/cms/danh-gia/update'
 */
 export const update = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -196,7 +196,7 @@ update.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::update
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:39
+* @see [unknown]:0
 * @route '/cms/danh-gia/update'
 */
 update.url = (options?: RouteQueryOptions) => {
@@ -205,7 +205,7 @@ update.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::update
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:39
+* @see [unknown]:0
 * @route '/cms/danh-gia/update'
 */
 update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
@@ -215,7 +215,7 @@ update.put = (options?: RouteQueryOptions): RouteDefinition<'put'> => ({
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::update
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:39
+* @see [unknown]:0
 * @route '/cms/danh-gia/update'
 */
 const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -230,7 +230,7 @@ const updateForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> =>
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::update
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:39
+* @see [unknown]:0
 * @route '/cms/danh-gia/update'
 */
 updateForm.put = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -247,7 +247,7 @@ update.form = updateForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::updateMultiple
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:46
+* @see [unknown]:0
 * @route '/cms/danh-gia/update-multiple'
 */
 export const updateMultiple = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -262,7 +262,7 @@ updateMultiple.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::updateMultiple
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:46
+* @see [unknown]:0
 * @route '/cms/danh-gia/update-multiple'
 */
 updateMultiple.url = (options?: RouteQueryOptions) => {
@@ -271,7 +271,7 @@ updateMultiple.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::updateMultiple
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:46
+* @see [unknown]:0
 * @route '/cms/danh-gia/update-multiple'
 */
 updateMultiple.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -281,7 +281,7 @@ updateMultiple.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::updateMultiple
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:46
+* @see [unknown]:0
 * @route '/cms/danh-gia/update-multiple'
 */
 const updateMultipleForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -291,7 +291,7 @@ const updateMultipleForm = (options?: RouteQueryOptions): RouteFormDefinition<'p
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::updateMultiple
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:46
+* @see [unknown]:0
 * @route '/cms/danh-gia/update-multiple'
 */
 updateMultipleForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -303,7 +303,7 @@ updateMultiple.form = updateMultipleForm
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:62
+* @see [unknown]:0
 * @route '/cms/danh-gia/delete/{id}'
 */
 export const deleteMethod = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -318,7 +318,7 @@ deleteMethod.definition = {
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:62
+* @see [unknown]:0
 * @route '/cms/danh-gia/delete/{id}'
 */
 deleteMethod.url = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions) => {
@@ -345,7 +345,7 @@ deleteMethod.url = (args: { id: string | number } | [id: string | number ] | str
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:62
+* @see [unknown]:0
 * @route '/cms/danh-gia/delete/{id}'
 */
 deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'delete'> => ({
@@ -355,7 +355,7 @@ deleteMethod.delete = (args: { id: string | number } | [id: string | number ] | 
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:62
+* @see [unknown]:0
 * @route '/cms/danh-gia/delete/{id}'
 */
 const deleteMethodForm = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -370,7 +370,7 @@ const deleteMethodForm = (args: { id: string | number } | [id: string | number ]
 
 /**
 * @see \Domains\Product\Http\Controllers\Cms\ProductReviewController::deleteMethod
-* @see domains/Product/Http/Controllers/Cms/ProductReviewController.php:62
+* @see [unknown]:0
 * @route '/cms/danh-gia/delete/{id}'
 */
 deleteMethodForm.delete = (args: { id: string | number } | [id: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({

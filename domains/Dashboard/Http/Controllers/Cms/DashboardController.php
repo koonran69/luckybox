@@ -3,19 +3,14 @@
 namespace Domains\Dashboard\Http\Controllers\Cms;
 
 use Domains\Core\Http\Controllers\BaseController;
-use Domains\Dashboard\Reports\OrderReport;
-use Domains\Order\Repositories\Order\OrderRepositoryInterface;
-use Domains\Product\Repositories\Product\ProductRepositoryInterface;
+
 use Domains\User\Models\User;
 use Illuminate\Support\Facades\Http;
 
 class DashboardController extends BaseController
 {
     public function __construct(
-        public ProductRepositoryInterface $repoProduct,
-        public OrderRepositoryInterface $repoOrder,
         public User $modelUser,
-        public OrderReport $orderReport
     )
     {
         

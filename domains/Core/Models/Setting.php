@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\DB;
 class Setting extends BaseModel
 {
     use HasFactory;
-    
+
     const CACHE_KEY_GET_ALL = 'cache_settings';
 
     protected $table = 'settings';
@@ -73,7 +73,7 @@ class Setting extends BaseModel
     }
 
     public static function updateMultipleRecord(array $data){
-        
+
         Cache::forget(Setting::CACHE_KEY_GET_ALL);
 
         $query = "UPDATE settings SET plain_value = CASE setting_key ";
@@ -81,7 +81,7 @@ class Setting extends BaseModel
         foreach ($data as $key => $value) {
             $query .= "WHEN '{$key}' THEN '{$value}' ";
         }
-        
+
         $query .= "END WHERE setting_key IN ('".implode("', '", array_keys($data))."')";
 
         return DB::update($query);

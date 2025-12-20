@@ -1,7 +1,7 @@
 import { queryParams, type RouteQueryOptions, type RouteDefinition, type RouteFormDefinition } from './../../../../../../wayfinder'
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::index
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 export const index = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -16,7 +16,7 @@ index.definition = {
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::index
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 index.url = (options?: RouteQueryOptions) => {
@@ -25,7 +25,7 @@ index.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::index
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -35,7 +35,7 @@ index.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::index
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -45,7 +45,7 @@ index.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::index
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -55,7 +55,7 @@ const indexForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => (
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::index
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -65,7 +65,7 @@ indexForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Dashboard\Http\Controllers\Cms\DashboardController::index
-* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:23
+* @see domains/Dashboard/Http/Controllers/Cms/DashboardController.php:18
 * @route '/cms/dashboard'
 */
 indexForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
