@@ -2,6 +2,7 @@
 
 namespace Domains\Web\Http\Controllers\Home;
 
+use Domains\Core\Enums\DefaultActive;
 use Domains\Core\Enums\Gender;
 use Domains\Core\Http\Requests\Request;
 use Domains\User\Models\User;
@@ -73,13 +74,14 @@ class HomeController extends Controller
         }
 
         //Xử lý logic lấy phần thưởng random theo tỉ lệ
-        $rewards = $this->rewardModel::where('is_active', true)
+        $rewards = $this->rewardModel::where('is_active', DefaultActive::Active)
             ->where(function ($q) {
                 $q->where('remaining_quantity', '>', 0)
                     ->orWhere('remaining_quantity', -1);
             })
             ->lockForUpdate()
             ->get();
+
         if ($rewards->isEmpty()) {
             // fallback tuyệt đối (phòng DB lỗi)
             $reward = $this->rewardModel->where('code', 'LUCKY_MESSAGE')->firstOrFail();
