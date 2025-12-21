@@ -5,28 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/balo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/box-random.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/partern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-dong-ho-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-goi-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-loi-chuc-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-may-anh-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/reward-vang-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/vali-footer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/xin-chuc-mung.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/vi/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/vi/validation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/AppShell.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppShell.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Banner.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/layouts/app/AppSimpleLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/layouts/app/AppSimpleLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/types/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +255,7 @@
       <workItem from="1766292361981" duration="210000" />
       <workItem from="1766292630407" duration="497000" />
       <workItem from="1766293183116" duration="555000" />
-      <workItem from="1766294982287" duration="10849000" />
+      <workItem from="1766294982287" duration="21870000" />
     </task>
     <servers />
   </component>
@@ -281,13 +277,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue</url>
-          <line>23</line>
+          <line>25</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue</url>
-          <line>328</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue</url>

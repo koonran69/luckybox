@@ -153,15 +153,16 @@ class HomeController extends Controller
             ->first();
 
         // Còn lượt mở không?
-        $spinTicket = $this->spinTicketModel
+        $countSpin = $this->spinTicketModel
             ->where('user_id', $user->id)
             ->where('is_used', false)
-            ->first();
+            ->get()->count();
 
         return Inertia::render('home/ClaimBox', [
             'hasOpened' => (bool)$openedReward,
             'openedReward' => $openedReward,
-            'canSpin' => (bool)$spinTicket,
+            'canSpin'      => $countSpin > 0,
+            'countSpin'    => $countSpin,
         ]);
     }
 
@@ -171,8 +172,11 @@ class HomeController extends Controller
 
         //Tạo thông tin user và cộng một lượt quay nếu user mới (Kiểm tra theo phone)
         $user = $this->userModel->firstOrCreate(
-            ['phone' => $data['phone']],
             [
+                'phone' => $data['phone'],
+            ],
+            [
+                'email' => $data['email'],
                 'fullname' => $data['fullname'],
                 'gender' => $data['gender'] ?? null,
                 'age' => $data['age'] ?? null,

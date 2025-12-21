@@ -14,6 +14,12 @@ return [
             'unique'   => 'Số điện thoại này đã được sử dụng.',
         ],
 
+        'email' => [
+            'required' => 'Vui lòng nhập email.',
+            'email'    => 'Email không đúng định dạng.',
+            'unique'   => 'Email này đã được sử dụng.',
+        ],
+
         'gender' => [
             'enum' => 'Giới tính không hợp lệ.',
         ],

@@ -4,6 +4,7 @@ import InputError from '@/components/ui/InputError.vue';
 import { Form, Link, useForm } from '@inertiajs/vue3';
 import { toast } from 'vue-sonner';
 import { ref } from 'vue';
+import {asset} from "@/lib/utils";
 interface Props {
   genders: Record<string, string>
 }
@@ -17,6 +18,7 @@ const form = useForm({
   gender: '',
   age: '',
   address: '',
+  email: '',
 })
 
 function submit() {
@@ -40,36 +42,26 @@ function submit() {
 <template>
   <section class="my-5">
     <div class="container-md">
-      <div class="register-card">
-        <h2 class="register-title">{{ $t('THÔNG TIN THAM GIA TRÚNG THƯỞNG') }}</h2>
-        <Form @submit.prevent="submit" v-slot="{ errors, processing }" :options="{ preserveScroll: true }">
-          <div class="mb-3">Form
-            <input name="fullname" v-model="form.fullname" type="text" required class="form-control" placeholder="Họ và tên"/>
+      <div class="register-card mt-5">
+        <div class="box-header">
+          <img :src="asset('/assets/images/balo.png')" class="img-header" />
+        </div>
+
+        <h2 class="register-title">{{ $t('THÔNG TIN THAM GIA') }}</h2>
+        <Form class="form-register-wrapper" @submit.prevent="submit" v-slot="{ errors, processing }" :options="{ preserveScroll: true }">
+          <div class="mb-3 input-wrapper">
+            <input name="fullname" v-model="form.fullname" type="text" required class="form-control" data-placeholder="Họ và tên" placeholder="Họ và tên*"/>
             <InputError :message="errors.fullname" />
           </div>
 
-          <div class="mb-3">
-            <input name="phone" v-model="form.phone" type="text" required class="form-control" placeholder="Số điện thoại"/>
+          <div class="mb-3 input-wrapper">
+            <input name="phone" v-model="form.phone" type="text" required class="form-control" data-placeholder="Số điện thoại" placeholder="Số điện thoại*"/>
             <InputError :message="errors.phone" />
           </div>
 
-          <div class="mb-3">
-            <select name="gender" v-model="form.gender" class="form-select d-flex align-items-center mb-3 mb-md-0">
-              <option value="">
-                {{ $t('Chọn giới tính') }}
-              </option>
-              <option v-for="(label, index) in props.genders" :value="index">{{label}}</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <input name="age" v-model="form.age" type="text" class="form-control" placeholder="Độ tuổi" />
-            <InputError :message="errors.address" />
-          </div>
-          
-          <div class="mb-3">
-            <input name="address" v-model="form.address" type="text" class="form-control" placeholder="Địa chỉ"/>
-            <InputError :message="errors.address" />
+          <div class="mb-3 input-wrapper">
+            <input name="email" v-model="form.email" type="email" required class="form-control" data-placeholder="Email" placeholder="Email*"/>
+            <InputError :message="errors.email" />
           </div>
 
           <div class="mb-3 checkbox-wrapper">
@@ -104,7 +96,7 @@ function submit() {
           <div class="d-flex gap-3">
             <button
                 type="submit"
-                class="btn register-btn-primary btn-orange-theme flex-fill"
+                class="btn btn-orange-theme flex-fill text-uppercase"
                 :disabled="!acceptedTerms || !acceptedProgramRules || processing"
             >
               {{ $t('Tham gia ngay') }}
@@ -116,10 +108,6 @@ function submit() {
   </section>
 </template>
 <style scoped>
-.form-control.is-invalid {
-  animation: shake 0.3s;
-}
-
 @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(-4px); }
@@ -133,37 +121,40 @@ function submit() {
 }
 
 .register-card {
-  background: #fff;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  background-color: #F15A24;
+  background-image: url("/assets/images/partern.png");
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+
+  position: relative;
+  overflow: visible;
+}
+
+.box-header {
+  position: relative;
+  width: 190px;
+  height: 90px;
+}
+
+.img-header {
+  width: 100%;
+  position: absolute;
+  left: -20px;
+  top: -70px;
 }
 
 .register-title {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
-  color: #ff7a00;
-}
-
-.form-control,
-.form-select {
-  height: 48px;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-}
-
-.form-control::placeholder {
-  color: #999;
-  font-size: 14px;
-}
-
-.form-control:focus,
-.form-select:focus {
-  border-color: #ff7a00;
-  box-shadow: 0 0 0 2px rgba(255, 122, 0, 0.15);
+  margin-bottom: 10px;
+  color: #fff;
 }
 
 .checkbox-wrapper {
@@ -206,11 +197,13 @@ function submit() {
 .checkbox-wrapper label {
   font-size: 13px;
   line-height: 1.5;
-  color: #333;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .checkbox-wrapper a {
-  color: #ff7a00;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1 !important;
   text-decoration: underline;
+  font-weight: 600;
 }
 </style>
