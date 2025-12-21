@@ -43,8 +43,11 @@ function submit() {
   <section class="my-5">
     <div class="container-md">
       <div class="register-card mt-5">
-        <div class="box-header">
-          <img :src="asset('/assets/images/balo.png')" class="img-header" />
+        <div class="box-header-left">
+          <img :src="asset('/assets/images/balo.png')" class="img-header-left" />
+        </div>
+        <div class="box-header-right">
+          <img :src="asset('/assets/images/balo-form.png')" class="img-header-right" />
         </div>
 
         <h2 class="register-title">{{ $t('THÔNG TIN THAM GIA') }}</h2>
@@ -136,17 +139,34 @@ function submit() {
   overflow: visible;
 }
 
-.box-header {
+.box-header-left {
   position: relative;
   width: 190px;
   height: 90px;
 }
 
-.img-header {
+.img-header-left {
   width: 100%;
   position: absolute;
   left: -20px;
   top: -70px;
+}
+
+.box-header-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.img-header-right {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: -40px;
 }
 
 .register-title {

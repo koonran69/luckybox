@@ -344,7 +344,6 @@ onMounted(() => {
   background-position: center top;
   background-size: auto;
 
-  //border: 8px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -359,15 +358,15 @@ onMounted(() => {
 .reward-modal-backdrop .reward-modal::before {
   content: "";
   position: absolute;
-  inset: -10px; /* độ dày viền */
+  inset: -8px; /* outside stroke 8px */
   border-radius: 28px;
 
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background: linear-gradient(
       180deg,
-      #ffffff 0%,
-      #ffd6b8 25%,
-      #ff8a4c 55%,
-      #e4531f 100%
+      rgba(255,255,255,0.6),
+      rgba(255,255,255,0.25)
   );
 
   z-index: -1;
