@@ -15,7 +15,6 @@ withDefaults(defineProps<Props>(), {
 </script>
 <template>
     <AppShell>
-        <AppHeader :transparent="transparent" />
         <AppContent>
             <slot />
         </AppContent>

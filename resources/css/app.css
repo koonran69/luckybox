@@ -73,7 +73,7 @@ p{
     background: var(--color-orange-theme);
     color: #fff;
     border: 1px solid var(--color-orange-theme);
-    border-radius: 20px;
+    border-radius: 4px;
 
     transition: all 0.3s ease;
 }
@@ -96,7 +96,7 @@ p{
 }
 
 .btn-outline-cancel{
-    border-radius: 20px;
+    border-radius: 4px;
     border: 1px solid #555;
 }
 
@@ -104,13 +104,13 @@ p{
     background: #ffffff;
     color: var(--color-blue-theme);
     border: 1px solid var(--color-blue-theme);
-    border-radius: 20px;
+    border-radius: 4px;
 }
 .btn-outline-blue-theme:hover, .btn-outline-blue-theme:active, .btn-outline-blue-theme:focus, .btn-outline-blue-theme.active{
     background: var(--color-blue-theme);
     color: #fff;
     border: 1px solid var(--color-blue-theme);
-    border-radius: 20px;
+    border-radius: 4px;
 }
 
 .no-caret:after{
@@ -944,6 +944,22 @@ textarea.form-control {
 
 .banner-wrapper:not(:first-child) {
     padding-top: 10px;
+}
+
+.title-lk{
+    width: 295px;
+    height: 48px;
+    opacity: 1;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 8px 40px;
+    gap: 10px;
+    text-align: center;
+    background-color: #FFDFD3;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ff7a00;
+    margin-bottom: 16px;
 }
 
 .title-product-new{

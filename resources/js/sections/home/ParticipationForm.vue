@@ -38,10 +38,10 @@ function submit() {
 }
 </script>
 <template>
-  <div class="mt-session">
+  <section class="my-5">
     <div class="container-md">
       <div class="register-card">
-        <h1 class="register-title">{{ $t('THÔNG TIN THAM GIA TRÚNG THƯỞNG') }}</h1>
+        <h2 class="register-title">{{ $t('THÔNG TIN THAM GIA TRÚNG THƯỞNG') }}</h2>
         <Form @submit.prevent="submit" v-slot="{ errors, processing }" :options="{ preserveScroll: true }">
           <div class="mb-3">Form
             <input name="fullname" v-model="form.fullname" type="text" required class="form-control" placeholder="Họ và tên"/>
@@ -113,13 +113,64 @@ function submit() {
         </Form>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <style scoped>
+.form-control.is-invalid {
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+.register-card form > div {
+  margin-bottom: 12px;
+}
+
+.register-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.register-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff7a00;
+}
+
+.form-control,
+.form-select {
+  height: 48px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-control::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 2px rgba(255, 122, 0, 0.15);
+}
+
 .checkbox-wrapper {
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .custom-checkbox {
@@ -132,6 +183,7 @@ function submit() {
   cursor: pointer;
   position: relative;
   margin-top: 3px;
+  flex-shrink: 0;
 }
 
 .custom-checkbox:checked {
@@ -152,9 +204,9 @@ function submit() {
 }
 
 .checkbox-wrapper label {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
-  cursor: pointer;
+  color: #333;
 }
 
 .checkbox-wrapper a {

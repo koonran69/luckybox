@@ -199,7 +199,11 @@ class HomeController extends Controller
 
     public function index()
     {
+        $rewards = $this->rewardModel::where(function ($q) {
+                $q->where('total_quantity', '>', -1);
+            })->get();
         return Inertia::render('home/Index', [
+            'rewards' => $rewards,
             'genders' => Gender::asSelectArray(),
         ]);
     }

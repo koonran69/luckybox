@@ -12,6 +12,7 @@ export interface BreadcrumbItem {
 
 export type RewardData = {
     id: number;
+    code: string;
     image: string;
     name: string;
     description: string;
@@ -32,7 +33,7 @@ export type RewardHistory = {
     status: string;
     box_position: number | null;
     created_at: string;
-    reward: Reward  | null;
+    reward: RewardData | null;
 }
 
 export type StoreData = {

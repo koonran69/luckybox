@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/xin-chuc-mung-header-modal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/instruct-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AppShell.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppShell.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Banner.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/layouts/app/AppSimpleLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/layouts/app/AppSimpleLayout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/types/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,11 +220,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+      <recent name="$PROJECT_DIR$/resources/js/sections/home" />
       <recent name="$PROJECT_DIR$/domains/Web" />
       <recent name="$PROJECT_DIR$/domains/Web/Enums" />
-      <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$/domains" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -231,7 +250,16 @@
       <updated>1766205268879</updated>
       <workItem from="1766205269927" duration="4787000" />
       <workItem from="1766210687437" duration="18445000" />
-      <workItem from="1766229927938" duration="9126000" />
+      <workItem from="1766229927938" duration="9309000" />
+      <workItem from="1766286642002" duration="598000" />
+      <workItem from="1766287665624" duration="599000" />
+      <workItem from="1766288714469" duration="501000" />
+      <workItem from="1766291409852" duration="150000" />
+      <workItem from="1766292240319" duration="12000" />
+      <workItem from="1766292361981" duration="210000" />
+      <workItem from="1766292630407" duration="497000" />
+      <workItem from="1766293183116" duration="555000" />
+      <workItem from="1766294982287" duration="10849000" />
     </task>
     <servers />
   </component>
@@ -255,6 +283,23 @@
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue</url>
           <line>23</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue</url>
+          <line>328</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue</url>
+          <line>66</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue</url>
+          <line>56</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

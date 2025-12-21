@@ -5,6 +5,7 @@ import {ref, onMounted, computed} from 'vue';
 import {RewardHistory} from "@/types";
 import { useI18n } from 'vue-i18n';
 import { asset } from '@/lib/utils';
+import AppLayout from "@/layouts/AppLayout.vue";
 
 interface BoxItem {
   id: number;
@@ -101,129 +102,131 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="claim-box mt-session pb-5">
-    <h2 class="section-title mb-4 display-6 fw-700 text-center">
-      {{ $t('Chọn thẻ may mắn') }}
-    </h2>
+  <AppLayout :transparent="true">
+    <section class="claim-box mt-session pb-5">
+      <h2 class="section-title mb-4 display-6 fw-700 text-center">
+        {{ $t('Chọn thẻ may mắn') }}
+      </h2>
 
-    <div class="container">
-      <div class="box-grid">
-        <!-- HÀNG 1 -->
-        <div class="box-row-center">
-          <div
-              v-for="box in boxes.slice(0, pcFirstRow)"
-              :key="box.id"
-              class="flip-card-wrapper"
-          >
+      <div class="container">
+        <div class="box-grid">
+          <!-- HÀNG 1 -->
+          <div class="box-row-center">
             <div
-                class="flip-card"
-                :class="{ flipped: box.flipped,
+                v-for="box in boxes.slice(0, pcFirstRow)"
+                :key="box.id"
+                class="flip-card-wrapper"
+            >
+              <div
+                  class="flip-card"
+                  :class="{ flipped: box.flipped,
                   disabled: props.hasOpened || !props.canSpin || (boxes.some(b => b.flipped) && !box.flipped)
                 }"
-                @click="flipBox(box)"
-            >
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="box-front">
-                    <span class="random">?</span>
+                  @click="flipBox(box)"
+              >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="box-front">
+                      <span class="random">?</span>
+                    </div>
+                  </div>
+
+                  <div class="flip-card-back">
+                    <div class="box-back">
+                      <template v-if="props.hasOpened && props.openedReward && props.openedReward?.box_position === box.id">
+                        <img v-if="props.openedReward.reward.image" :src="asset(props.openedReward.reward.image)" class="reward-image" />
+                        <div class="reward-title">
+                          {{ props.openedReward.reward.code == 'LUCKY_MESSAGE' ? $t('Chúc mừng bạn đã') : $t('Chúc mừng bạn đã trúng') }}
+                        </div>
+                        <div class="reward-name">{{ props.openedReward?.reward.name }}</div>
+                      </template>
+
+                      <template v-else>
+                        🎉
+                        <p>May mắn!</p>
+                      </template>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="flip-card-back">
-                  <div class="box-back">
-                    <template v-if="props.hasOpened && props.openedReward && props.openedReward?.box_position === box.id">
-                      <img v-if="props.openedReward.reward.image" :src="asset(props.openedReward.reward.image)" class="reward-image" />
-                      <div class="reward-title">
-                        {{ props.openedReward.reward.code == 'LUCKY_MESSAGE' ? $t('Chúc mừng bạn đã') : $t('Chúc mừng bạn đã trúng') }}
-                      </div>
-                      <div class="reward-name">{{ props.openedReward?.reward.name }}</div>
-                    </template>
+          <!-- HÀNG 2 -->
+          <div class="box-row-center">
+            <div
+                v-for="box in boxes.slice(pcFirstRow)"
+                :key="box.id"
+                class="flip-card-wrapper"
+            >
+              <div
+                  class="flip-card"
+                  :class="{ flipped: box.flipped,
+                  disabled: props.hasOpened || !props.canSpin || (boxes.some(b => b.flipped) && !box.flipped)
+                }"
+                  @click="flipBox(box)"
+              >
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="box-front">
+                      <span class="random">?</span>
+                    </div>
+                  </div>
 
-                    <template v-else>
-                      🎉
-                      <p>May mắn!</p>
-                    </template>
+                  <div class="flip-card-back">
+                    <div class="box-back">
+                      <template
+                          v-if="props.hasOpened && props.openedReward && props.openedReward?.box_position === box.id">
+                        <img v-if="props.openedReward.reward.image"
+                             :src="props.openedReward.reward.image"
+                             class="reward-image"
+                        />
+                      </template>
+
+                      <template v-else>
+                        🎉
+                        <p>May mắn!</p>
+                      </template>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- HÀNG 2 -->
-        <div class="box-row-center">
-          <div
-              v-for="box in boxes.slice(pcFirstRow)"
-              :key="box.id"
-              class="flip-card-wrapper"
-          >
-            <div
-                class="flip-card"
-                :class="{ flipped: box.flipped,
-                  disabled: props.hasOpened || !props.canSpin || (boxes.some(b => b.flipped) && !box.flipped)
-                }"
-                @click="flipBox(box)"
-            >
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <div class="box-front">
-                    <span class="random">?</span>
-                  </div>
-                </div>
-
-                <div class="flip-card-back">
-                  <div class="box-back">
-                    <template
-                        v-if="props.hasOpened && props.openedReward && props.openedReward?.box_position === box.id">
-                      <img v-if="props.openedReward.reward.image"
-                           :src="props.openedReward.reward.image"
-                           class="reward-image"
-                      />
-                    </template>
-
-                    <template v-else>
-                      🎉
-                      <p>May mắn!</p>
-                    </template>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-          class="box-grid"
-          :style="{
+        <div
+            class="box-grid"
+            :style="{
             '--pc-columns': 5,
             '--pc-first-row': pcFirstRow
           }"
-      >
-      </div>
-    </div>
-
-    <!-- Modal Reward -->
-    <transition name="fade">
-      <div v-if="showRewardModal" class="reward-modal-backdrop">
-        <div class="reward-modal">
-          <div class="reward-modal-header">
-            🎉 {{ t('Chúc mừng bạn!') }}
-          </div>
-          <div class="reward-modal-body">
-            <img v-if="currentReward?.reward.image" :src="asset(currentReward.reward.image)" class="reward-image"/>
-            <div class="reward-title">
-              {{ currentReward?.reward.code === 'LUCKY_MESSAGE' ? t('Chúc mừng bạn đã') : t('Chúc mừng bạn đã trúng') }}
-            </div>
-            <div class="reward-name">{{ currentReward?.reward.name }}</div>
-            <div class="reward-desc" v-if="rewardDesc" v-html="rewardDesc"></div>
-          </div>
-          <div class="reward-modal-footer">
-            <a class="btn btn-orange" target="_blank" href="https://bamozo.vn/">{{ t('ĐÃ HIỂU & GHÉ THĂM MAMOZO') }}</a>
-          </div>
+        >
         </div>
       </div>
-    </transition>
-  </section>
+
+      <!-- Modal Reward -->
+      <transition name="fade">
+        <div v-if="showRewardModal" class="reward-modal-backdrop">
+          <div class="reward-modal">
+            <div class="reward-modal-header">
+              🎉 {{ t('Chúc mừng bạn!') }}
+            </div>
+            <div class="reward-modal-body">
+              <img v-if="currentReward?.reward.image" :src="asset(currentReward.reward.image)" class="reward-image"/>
+              <div class="reward-title">
+                {{ currentReward?.reward.code === 'LUCKY_MESSAGE' ? t('Chúc mừng bạn đã') : t('Chúc mừng bạn đã trúng') }}
+              </div>
+              <div class="reward-name">{{ currentReward?.reward.name }}</div>
+              <div class="reward-desc" v-if="rewardDesc" v-html="rewardDesc"></div>
+            </div>
+            <div class="reward-modal-footer">
+              <a class="btn btn-orange" target="_blank" href="https://bamozo.vn/">{{ t('ĐÃ HIỂU & GHÉ THĂM MAMOZO') }}</a>
+            </div>
+          </div>
+        </div>
+      </transition>
+    </section>
+  </AppLayout>
 </template>
 
 <style scoped>
