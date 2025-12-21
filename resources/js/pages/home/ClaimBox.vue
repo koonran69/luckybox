@@ -20,6 +20,34 @@ interface Props {
 const props = defineProps<Props>();
 const page = usePage();
 
+const showRewardModal = ref(false);
+const currentReward = ref<RewardHistory | null>(null);
+
+const { t } = useI18n();
+const rewardDesc = computed(() => {
+  if (!currentReward.value) return null;
+  const code = props.openedReward.reward.code;
+  switch (code) {
+    case 'LUCKY_MESSAGE':
+      return t('Hành trình mang Tết về nhà của bạn vẫn tiếp tục ✨Khám phá thêm các mẫu vali Bamozo để gói trọn những chuyến đi sắp tới nhé!');
+    case 'SECOND_PRIZE_CAMERA':
+    case 'THIRD_PRIZE_MIBAND':
+    case 'CONSOLATION_PILLOW':
+      return `
+        <p style="margin-bottom:0"><span>BTC Bamozo</span> ${t('sẽ liên hệ qua số điện thoại đã đăng ký để xác nhận và hướng dẫn nhận quà')}</p>
+        <p style="margin-bottom:0">${t('Thời gian liên hệ và trao quà dự kiến:')} <span>${t('trong vòng 7 ngày làm việc kể từ khi kết thúc minigame')}</span></p>
+      `;
+    case 'FIRST_PRIZE_GOLD':
+      return `
+        <div>${t('Thời gian quay số: 28/02')}</div>
+        <p style="margin-bottom:0">${t('Công bố trực tiếp tại fanpage chính thức Bamozo')}</p>
+        <p style="margin-bottom:0">${t('Người trúng giải sẽ được')} <span>${t('BTC liên hệ trực tiếp trong vòng 7 ngày làm việc')}</span> ${t('để xác nhận và trao thưởng')}</p>
+      `;
+    default:
+      return null;
+  }
+});
+
 const pcFirstRow = 5;
 const boxes = ref<BoxItem[]>(
     Array.from({length: 9}, (_, i) => ({
@@ -46,6 +74,10 @@ function flipBox(box: BoxItem) {
 
         onSuccess: (page) => {
           box.flipped = true;
+          if (props.openedReward) {
+            currentReward.value = props.openedReward;
+            showRewardModal.value = true;
+          }
         },
         onError: (errors) => {
           console.log(errors);
@@ -60,34 +92,12 @@ onMounted(() => {
     if (box) {
       box.flipped = true;
     }
+    currentReward.value = props.openedReward;
+    showRewardModal.value = true;
   }
 });
 
-const { t } = useI18n();
-const rewardDesc = computed(() => {
-  if (!props.hasOpened || !props.openedReward) return null;
 
-  const code = props.openedReward.reward.code;
-  switch (code) {
-    case 'LUCKY_MESSAGE':
-      return t('Hành trình mang Tết về nhà của bạn vẫn tiếp tục ✨Khám phá thêm các mẫu vali Bamozo để gói trọn những chuyến đi sắp tới nhé!');
-    case 'SECOND_PRIZE_CAMERA':
-    case 'THIRD_PRIZE_MIBAND':
-    case 'CONSOLATION_PILLOW':
-      return `
-        <p><span>BTC Bamozo</span> ${t('sẽ liên hệ qua số điện thoại đã đăng ký để xác nhận và hướng dẫn nhận quà')}</p>
-        <p>${t('Thời gian liên hệ và trao quà dự kiến:')} <span>${t('trong vòng 7 ngày làm việc kể từ khi kết thúc minigame')}</span></p>
-      `;
-    case 'FIRST_PRIZE_GOLD':
-      return `
-        <div>${t('Thời gian quay số: 28/02')}</div>
-        <p>${t('Công bố trực tiếp tại fanpage chính thức Bamozo')}</p>
-        <p>${t('Người trúng giải sẽ được')} <span>${t('BTC liên hệ trực tiếp trong vòng 7 ngày làm việc')}</span> ${t('để xác nhận và trao thưởng')}</p>
-      `;
-    default:
-      return null;
-  }
-});
 </script>
 
 <template>
@@ -191,11 +201,32 @@ const rewardDesc = computed(() => {
       >
       </div>
     </div>
+
+    <!-- Modal Reward -->
+    <transition name="fade">
+      <div v-if="showRewardModal" class="reward-modal-backdrop">
+        <div class="reward-modal">
+          <div class="reward-modal-header">
+            🎉 {{ t('Chúc mừng bạn!') }}
+          </div>
+          <div class="reward-modal-body">
+            <img v-if="currentReward?.reward.image" :src="asset(currentReward.reward.image)" class="reward-image"/>
+            <div class="reward-title">
+              {{ currentReward?.reward.code === 'LUCKY_MESSAGE' ? t('Chúc mừng bạn đã') : t('Chúc mừng bạn đã trúng') }}
+            </div>
+            <div class="reward-name">{{ currentReward?.reward.name }}</div>
+            <div class="reward-desc" v-if="rewardDesc" v-html="rewardDesc"></div>
+          </div>
+          <div class="reward-modal-footer">
+            <a class="btn btn-orange" target="_blank" href="https://bamozo.vn/">{{ t('ĐÃ HIỂU & GHÉ THĂM MAMOZO') }}</a>
+          </div>
+        </div>
+      </div>
+    </transition>
   </section>
 </template>
 
 <style scoped>
-
 .flip-card.disabled {
   pointer-events: none;
   opacity: 0.8;
@@ -352,7 +383,6 @@ const rewardDesc = computed(() => {
   overflow-y: auto;   /* nếu nội dung dài sẽ scroll nhẹ */
   margin-top: 8px;
   padding: 0 8px;
-  background: #fff8f0; /* nền nhẹ */
   border-radius: 8px;
   box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
 }
@@ -365,4 +395,112 @@ const rewardDesc = computed(() => {
   font-weight: 600;
   color: #ff9800;
 }
+
+
+
+.reward-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.reward-modal-backdrop .reward-modal {
+  background: #fff;
+  border-radius: 20px;
+  border: 8px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* body + footer cách đều */
+  padding: 24px;
+  max-width: 380px;
+  max-height: 600px;
+  height: 100%;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  animation: scaleIn 0.3s ease forwards;
+}
+
+.reward-modal-backdrop .reward-modal-header {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ff9800;
+}
+
+.reward-modal-backdrop .reward-modal-body {
+  overflow-y: auto;  /* nếu nội dung dài thì scroll */
+  flex: 1;           /* chiếm phần còn lại */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* căn giữa nội dung */
+}
+
+.reward-modal-backdrop .reward-modal-footer {
+  margin-top: 16px; /* cách modal body */
+  flex-shrink: 0;   /* không bị co lại */
+}
+
+.reward-modal-backdrop .btn-orange {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.reward-modal-backdrop .reward-modal-body .reward-image {
+  width: 150px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.reward-modal-backdrop .reward-title {
+  font-size: 18px;
+  color: #ff9800;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.reward-modal-backdrop .reward-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.reward-modal-backdrop .reward-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  max-height: 250px;
+  overflow-y: auto;
+  text-align: center;
+  padding: 0 8px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0.7); opacity: 0;}
+  100% { transform: scale(1); opacity: 1;}
+}
+
 </style>
