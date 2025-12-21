@@ -12,8 +12,8 @@ class SubmitParticipationRequest extends Request
     {
         return [
             'fullname' => ['required', 'string'],
-            'phone' => ['required', 'regex:/((09|03|07|08|05)+([0-9]{8})\b)/'], //, 'unique:users,phone'
-            'email' => ['required', 'email'], //'unique:users,email'
+            'phone' => ['required', 'regex:/((09|03|07|08|05)+([0-9]{8})\b)/','unique:users,phone'], //, 'unique:users,phone'
+            'email' => ['required', 'email','unique:users,email'], //'unique:users,email'
             'gender' => ['nullable', Rule::enum(Gender::class)],
             'age' => ['nullable', 'string'],
             'address' => ['nullable', 'string'],

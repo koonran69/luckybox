@@ -15,7 +15,7 @@ const {t} = useI18n();
 
 </script>
 <template>
-  <section class="mt-5">
+  <section class="mt-5" id="rules">
     <div class="container-md">
       <div class="title-section d-flex justify-content-center">
         <h1 class="title-lk">{{ $t('Thể lệ chương trình') }}</h1>
@@ -37,7 +37,7 @@ const {t} = useI18n();
     </div>
   </section>
 
-  <section class="mt-5">
+  <section class="mt-5" id="policy">
     <div class="container-md">
       <div class="title-section d-flex justify-content-center">
         <h1 class="title-lk">{{ $t('Chính sách') }}</h1>

@@ -13,7 +13,7 @@ const { t } = useI18n();
 
 </script>
 <template>
-  <section class="my-5">
+  <section class="my-5" id="guide">
     <div class="container-md">
       <div class="title-section d-flex justify-content-center">
         <h1 class="title-lk">{{$t('Hướng dẫn tham gia')}}</h1>

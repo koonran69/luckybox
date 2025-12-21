@@ -40,7 +40,7 @@ function submit() {
 }
 </script>
 <template>
-  <section class="my-5">
+  <section class="my-5" id="play-game-now">
     <div class="container-md">
       <div class="register-card mt-5">
         <div class="box-header-left">
