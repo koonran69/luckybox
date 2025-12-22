@@ -16,6 +16,7 @@ import product_variant from './product_variant'
 import product from './product'
 import product_category from './product_category'
 import product_review from './product_review'
+import reward from './reward'
 import setting from './setting'
 import user from './user'
 import voucher from './voucher'
@@ -176,6 +177,7 @@ const cms = {
     product: Object.assign(product, product),
     product_category: Object.assign(product_category, product_category),
     product_review: Object.assign(product_review, product_review),
+    reward: Object.assign(reward, reward),
     setting: Object.assign(setting, setting),
     user: Object.assign(user, user),
     voucher: Object.assign(voucher, voucher),

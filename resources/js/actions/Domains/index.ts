@@ -6,6 +6,7 @@ import ContactForm from './ContactForm'
 import DataStore from './DataStore'
 import Order from './Order'
 import Product from './Product'
+import Reward from './Reward'
 import Setting from './Setting'
 import User from './User'
 import Voucher from './Voucher'
@@ -19,6 +20,7 @@ const Domains = {
     DataStore: Object.assign(DataStore, DataStore),
     Order: Object.assign(Order, Order),
     Product: Object.assign(Product, Product),
+    Reward: Object.assign(Reward, Reward),
     Setting: Object.assign(Setting, Setting),
     User: Object.assign(User, User),
     Voucher: Object.assign(Voucher, Voucher),

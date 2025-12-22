@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <div class="modal-title">@lang('Bạn có chắc?')</div>
+                <div class="modal-title">@lang('Bạn có chắc muốn thực hiện thao tác này không?')</div>
                 <div>@lang('Nếu tiếp tục, hãy nhấn nút tiếp tục!')</div>
             </div>
             <div class="modal-footer">

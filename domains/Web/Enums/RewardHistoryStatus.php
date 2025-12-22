@@ -16,7 +16,7 @@ enum RewardHistoryStatus: string
     {
         return match($this) {
             self::received => 'bg-green text-green-fg',
-            self::pending => '',
+            self::pending => 'bg-warning text-warning-fg',
         };
     }
 }

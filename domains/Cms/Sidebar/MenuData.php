@@ -9,118 +9,14 @@ return [
     ],
 
     [
-        'title' => 'ECommerce',
-        'route_name' => '',
-        'icon' => '<i class="ti ti-building-store"></i>',
-        'sub' => [
-            [
-                'title' => 'Đơn hàng',
-                'route_name' => 'cms.order.index',
-                'icon' => '<i class="ti ti-shopping-cart"></i>'
-            ],
-
-            [
-                'title' => 'Voucher',
-                'route_name' => 'cms.voucher.index',
-                'icon' => '<i class="ti ti-ticket"></i>',
-                'sub' => []
-            ],
-
-            [
-                'title' => 'Đánh giá',
-                'route_name' => 'cms.product_review.index',
-                'icon' => '<i class="ti ti-star"></i>'
-            ],
-        ]
-    ],
-
-    [
-        'title' => 'Sản phẩm',
-        'route_name' => '',
-        'icon' => '<i class="ti ti-package"></i>',
-        'sub' => [
-            [
-                'title' => 'Danh sách',
-                'route_name' => 'cms.product.index',
-                'icon' => '<i class="ti ti-list"></i>'
-            ],
-
-            [
-                'title' => 'Danh mục',
-                'route_name' => 'cms.product_category.index',
-                'icon' => '<i class="ti ti-category"></i>'
-            ],
-        ]
-    ],
-
-    [
-        'title' => 'Blog',
-        'route_name' => '',
-        'icon' => '<i class="ti ti-article"></i>',
-        'sub' => [
-            [
-                'title' => 'Thêm bài viết',
-                'route_name' => 'cms.post.create',
-                'icon' => '<i class="ti ti-plus"></i>'
-            ],
-            [
-                'title' => 'Danh sách',
-                'route_name' => 'cms.post.index',
-                'icon' => '<i class="ti ti-list"></i>'
-            ],
-            [
-                'title' => 'Chuyên mục',
-                'route_name' => 'cms.post_category.index',
-                'icon' => '<i class="ti ti-category"></i>'
-            ],
-            [
-                'title' => 'Bình luận',
-                'route_name' => 'cms.post_comment.index',
-                'icon' => '<i class="ti ti-message"></i>'
-            ]
-        ],
-    ],
-    [
-        'title' => 'Quản lý dữ liệu',
-        'route_name' => '',
-        'icon' => '<i class="ti ti-database"></i>',
-        'sub' => [
-            [
-                'title' => 'Banner',
-                'route_name' => 'cms.banner.index',
-                'icon' => '<i class="ti ti-list"></i>'
-            ],
-
-            [
-                'title' => 'Liên hệ',
-                'route_name' => 'cms.setting.index',
-                'icon' => '<i class="ti ti-address-book"></i>',
-                'param' => [
-                    'group' => Domains\Core\Enums\Setting\SettingGroup::Contact->value,
-                ],
-            ],
-
-            [
-                'title' => 'SEO',
-                'route_name' => 'cms.setting.index',
-                'icon' => '<i class="ti ti-seo"></i>',
-                'param' => [
-                    'group' => Domains\Core\Enums\Setting\SettingGroup::Seo->value,
-                ],
-            ],
-            
-        ],
-    ],
-
-    [
-        'title' => 'Contact form',
-        'route_name' => 'cms.contactform.index',
-        'icon' => '<i class="ti ti-address-book"></i>',
+        'title' => 'Cấu hình phần thưởng',
+        'route_name' => 'cms.reward.index',
+        'icon' => '<i class="ti ti-gift"></i>',
         'sub' => []
     ],
 
     [
-        'title' => 'Người dùng',
+        'title' => 'Người tham gia',
         'route_name' => 'cms.user.index',
         'icon' => '<i class="ti ti-user"></i>',
         'sub' => []

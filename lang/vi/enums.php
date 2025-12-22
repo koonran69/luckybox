@@ -6,6 +6,11 @@ return [
         Domains\Core\Enums\DefaultStatus::Draft->value => 'Bản nháp'
     ],
 
+    Domains\Web\Enums\RewardHistoryStatus::class => [
+        Domains\Web\Enums\RewardHistoryStatus::pending->value => 'Chưa trao thưởng',
+        Domains\Web\Enums\RewardHistoryStatus::received->value => 'Đã trao thưởng'
+    ],
+
     Domains\Core\Enums\Gender::class => [
         Domains\Core\Enums\Gender::Male->value => 'Nam',
         Domains\Core\Enums\Gender::Female->value => 'Nữ',

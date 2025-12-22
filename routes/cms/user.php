@@ -15,5 +15,11 @@ Route::middleware([Domains\Admin\Http\Middleware\AuthAdminMiddleware::class, Dom
         Route::get('/edit/{id}', 'edit')->name('edit');
         Route::delete('/delete/{id}', 'delete')->name('delete');
         Route::get('search-select', 'searchSelect')->name('search_select');
+
+        Route::prefix('/reward')->controller(Domains\User\Http\Controllers\Cms\UserController::class)
+            ->name('reward.')
+            ->group(function () {
+                Route::put('/action-status/{rewardHistory}', 'actionStatusReward')->name('actionStatus');
+            });
     });
 });

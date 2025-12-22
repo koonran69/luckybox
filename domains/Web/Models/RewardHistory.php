@@ -18,16 +18,17 @@ class RewardHistory extends BaseModel
         'box_position'
     ];
 
-    protected function casts()
-    {
-        return [
-            'status' => RewardHistoryStatus::class
-        ];
-    }
+    protected $casts = [
+        'status' => RewardHistoryStatus::class,
+    ];
 
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    public function rewarded(){
+        return $this->hasOne(Reward::class, 'id','reward_id');
     }
 
     public function reward(){

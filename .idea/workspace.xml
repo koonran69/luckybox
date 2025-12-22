@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/domains/Reward/DataTables/RewardDataTable.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domains/Reward/Http/Controllers/Cms/RewardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/logo-ktech.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/remaining_quantity.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/total_quantity.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/weight.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/rewards/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/users/datatable/rewarded.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cms/users/datatable/spin_info.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/cms/reward.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/SettingSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/SettingSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Cms/Sidebar/MenuData.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Cms/Sidebar/MenuData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Dashboard/Http/Controllers/Cms/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Dashboard/Http/Controllers/Cms/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/User/DataTables/UserDataTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/User/DataTables/UserDataTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/User/Http/Controllers/Cms/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/User/Http/Controllers/Cms/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Enums/RewardHistoryStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Enums/RewardHistoryStatus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Models/RewardHistory.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Models/RewardHistory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/vi/enums.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/vi/enums.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/User/Http/Controllers/Cms/UserController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/User/Http/Controllers/Cms/UserController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Web/Http/Controllers/Home/HomeController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/user/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/user/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/layouts/modal/modal-ajax-confirm-update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/layouts/modal/modal-ajax-confirm-update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cms/users/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/users/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/cms/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cms/user.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,33 +207,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev/the-v1&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/public/assets/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev/the-v1",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Applications/MAMP/htdocs/luckybox/resources/views/cms/rewards/datatable",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assets/images" />
-      <recent name="$PROJECT_DIR$/resources/js/sections/home" />
-      <recent name="$PROJECT_DIR$/domains/Web" />
-      <recent name="$PROJECT_DIR$/domains/Web/Enums" />
+      <recent name="$PROJECT_DIR$/resources/views/cms/rewards/datatable" />
+      <recent name="$PROJECT_DIR$/routes/cms" />
+      <recent name="$PROJECT_DIR$/resources/views/cms" />
       <recent name="$PROJECT_DIR$/domains" />
+      <recent name="$PROJECT_DIR$/resources/views/cms/users/datatable" />
     </key>
   </component>
   <component name="RunManager">
@@ -241,7 +270,7 @@
       <workItem from="1766293183116" duration="555000" />
       <workItem from="1766294982287" duration="26669000" />
       <workItem from="1766326386311" duration="2116000" />
-      <workItem from="1766370900590" duration="2370000" />
+      <workItem from="1766370900590" duration="9526000" />
     </task>
     <servers />
   </component>
@@ -253,7 +282,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/lang/vi/enums.php</url>
-          <line>10</line>
+          <line>15</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -265,6 +294,11 @@
           <url>file://$PROJECT_DIR$/database/seeders/RewardSeeder.php</url>
           <line>31</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/domains/ContactForm/DataTables/ContactFormDataTable.php</url>
+          <line>24</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue</url>

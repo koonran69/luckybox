@@ -31,7 +31,7 @@ class SettingSeeder extends Seeder
             [
                 'setting_key' => 'site_logo',
                 'setting_name' => 'Logo',
-                'plain_value' => '/assets/images/logo.png',
+                'plain_value' => '/assets/images/logo-ktech.webp',
                 'type_input' => SettingTypeInput::Image,
                 'group' => SettingGroup::General,
                 'desc' => 'Logo thương hiệu'
@@ -40,7 +40,7 @@ class SettingSeeder extends Seeder
             [
                 'setting_key' => 'site_favicon',
                 'setting_name' => 'Favicon',
-                'plain_value' => '/assets/images/logo.png',
+                'plain_value' => '/assets/images/logo-ktech.webp',
                 'type_input' => SettingTypeInput::Image,
                 'group' => SettingGroup::General,
                 'desc' => 'Favicon'

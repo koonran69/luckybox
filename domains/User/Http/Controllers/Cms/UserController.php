@@ -7,6 +7,8 @@ use Domains\Core\Enums\Gender;
 use Domains\User\DataTables\UserDataTable;
 use Domains\User\Http\Requests\Cms\UserRequest;
 use Domains\User\Models\User;
+use Domains\Web\Enums\RewardHistoryStatus;
+use Domains\Web\Models\RewardHistory;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -18,7 +20,7 @@ class UserController extends Controller
     public function index(UserDataTable $datatable)
     {
         return $datatable->render('cms.users.index', [
-            'breadcrumb' => $this->breadcrumb()->addByRouteName(trans('Người dùng'))
+            'breadcrumb' => $this->breadcrumb()->addByRouteName(trans('Người tham gia'))
         ]);
     }
 
@@ -105,5 +107,17 @@ class UserController extends Controller
         return [
             'results' => $response
         ];
+    }
+
+    public function actionStatusReward(RewardHistory $rewardHistory)
+    {
+        if ($rewardHistory->status !== RewardHistoryStatus::pending) {
+            return utilities()->responseAjax(true,'Reward đã được xác nhận');
+        }
+
+        $rewardHistory->update([
+            'status' => RewardHistoryStatus::received,
+        ]);
+        return utilities()->responseAjax(false,'Xác nhận trao thưởng thành công');
     }
 }
