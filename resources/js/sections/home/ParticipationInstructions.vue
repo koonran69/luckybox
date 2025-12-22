@@ -107,8 +107,6 @@ const { t } = useI18n();
 
   display: flex;
   flex-direction: column;
-  //justify-content: center; /* căn giữa dọc */
-
 }
 
 .instruct-phase{
