@@ -85,7 +85,7 @@ index.form = indexForm
 * @see domains/Reward/Http/Controllers/Cms/RewardController.php:28
 * @route '/cms/phan-thuong/reward/{reward}/inline-update'
 */
-export const inlineUpdate = (args: { reward: string | number } | [reward: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
+export const inlineUpdate = (args: { reward: number | { id: number } } | [reward: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
     url: inlineUpdate.url(args, options),
     method: 'put',
 })
@@ -100,9 +100,13 @@ inlineUpdate.definition = {
 * @see domains/Reward/Http/Controllers/Cms/RewardController.php:28
 * @route '/cms/phan-thuong/reward/{reward}/inline-update'
 */
-inlineUpdate.url = (args: { reward: string | number } | [reward: string | number ] | string | number, options?: RouteQueryOptions) => {
+inlineUpdate.url = (args: { reward: number | { id: number } } | [reward: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions) => {
     if (typeof args === 'string' || typeof args === 'number') {
         args = { reward: args }
+    }
+
+    if (typeof args === 'object' && !Array.isArray(args) && 'id' in args) {
+        args = { reward: args.id }
     }
 
     if (Array.isArray(args)) {
@@ -114,7 +118,9 @@ inlineUpdate.url = (args: { reward: string | number } | [reward: string | number
     args = applyUrlDefaults(args)
 
     const parsedArgs = {
-        reward: args.reward,
+        reward: typeof args.reward === 'object'
+        ? args.reward.id
+        : args.reward,
     }
 
     return inlineUpdate.definition.url
@@ -127,7 +133,7 @@ inlineUpdate.url = (args: { reward: string | number } | [reward: string | number
 * @see domains/Reward/Http/Controllers/Cms/RewardController.php:28
 * @route '/cms/phan-thuong/reward/{reward}/inline-update'
 */
-inlineUpdate.put = (args: { reward: string | number } | [reward: string | number ] | string | number, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
+inlineUpdate.put = (args: { reward: number | { id: number } } | [reward: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteDefinition<'put'> => ({
     url: inlineUpdate.url(args, options),
     method: 'put',
 })
@@ -137,7 +143,7 @@ inlineUpdate.put = (args: { reward: string | number } | [reward: string | number
 * @see domains/Reward/Http/Controllers/Cms/RewardController.php:28
 * @route '/cms/phan-thuong/reward/{reward}/inline-update'
 */
-const inlineUpdateForm = (args: { reward: string | number } | [reward: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+const inlineUpdateForm = (args: { reward: number | { id: number } } | [reward: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
     action: inlineUpdate.url(args, {
         [options?.mergeQuery ? 'mergeQuery' : 'query']: {
             _method: 'PUT',
@@ -152,7 +158,7 @@ const inlineUpdateForm = (args: { reward: string | number } | [reward: string | 
 * @see domains/Reward/Http/Controllers/Cms/RewardController.php:28
 * @route '/cms/phan-thuong/reward/{reward}/inline-update'
 */
-inlineUpdateForm.put = (args: { reward: string | number } | [reward: string | number ] | string | number, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
+inlineUpdateForm.put = (args: { reward: number | { id: number } } | [reward: number | { id: number } ] | number | { id: number }, options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
     action: inlineUpdate.url(args, {
         [options?.mergeQuery ? 'mergeQuery' : 'query']: {
             _method: 'PUT',

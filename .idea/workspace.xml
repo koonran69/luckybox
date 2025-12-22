@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/files/chinh-sach.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/files/the-le-chuong-trinh.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Web/Models/Reward.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Models/Reward.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/actions/Domains/Reward/Http/Controllers/Cms/RewardController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/actions/Domains/Reward/Http/Controllers/Cms/RewardController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/routes/cms/reward/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/routes/cms/reward/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +192,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "dev/the-v1",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Applications/MAMP/htdocs/luckybox/resources/views/cms/rewards/datatable",
+    "last_opened_file_path": "/Applications/MAMP/htdocs/luckybox/public/assets/files",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -200,11 +206,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/files" />
       <recent name="$PROJECT_DIR$/resources/views/cms/rewards/datatable" />
       <recent name="$PROJECT_DIR$/routes/cms" />
       <recent name="$PROJECT_DIR$/resources/views/cms" />
       <recent name="$PROJECT_DIR$/domains" />
-      <recent name="$PROJECT_DIR$/resources/views/cms/users/datatable" />
     </key>
   </component>
   <component name="RunManager">
@@ -241,7 +247,9 @@
       <workItem from="1766293183116" duration="555000" />
       <workItem from="1766294982287" duration="26669000" />
       <workItem from="1766326386311" duration="2116000" />
-      <workItem from="1766370900590" duration="12127000" />
+      <workItem from="1766370900590" duration="13057000" />
+      <workItem from="1766387320992" duration="28000" />
+      <workItem from="1766387968027" duration="6989000" />
     </task>
     <servers />
   </component>
@@ -278,13 +286,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue</url>
-          <line>66</line>
+          <line>221</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue</url>
-          <line>56</line>
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/BottomNavigation.vue</url>
