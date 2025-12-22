@@ -171,8 +171,6 @@ function getNameTopReward(reward: RewardData){
 
         /* Bóng đổ qua TRÁI – ĐẬM */
       -2px 2px 3px rgba(211, 107, 61, 0.85);
-
-
 }
 
 /* mô tả */

@@ -43,13 +43,12 @@ function submit() {
   <section class="my-5" id="play-game-now">
     <div class="container-md">
       <div class="register-card mt-5">
-        <div class="box-header-left">
-          <img :src="asset('/assets/images/balo.png')" class="img-header-left" />
+        <div class="box-header d-flex justify-content-center">
+          <img :src="asset('/assets/images/vali-group.png')" class="img-header" />
         </div>
-        <div class="box-header-right">
-          <img :src="asset('/assets/images/balo-form.png')" class="img-header-right" />
+        <div class="register-sub text-center text-uppercase mt-3 mb-5">
+          <span>{{$t('Mở vali - Nhận Quà Liền Tay')}}</span>
         </div>
-
         <h2 class="register-title">{{ $t('THÔNG TIN THAM GIA') }}</h2>
         <Form class="form-register-wrapper" @submit.prevent="submit" v-slot="{ errors, processing }" :options="{ preserveScroll: true }">
           <div class="mb-3 input-wrapper">
@@ -77,7 +76,6 @@ function submit() {
             <label for="programRules">
               {{ $t('Tôi đồng ý với') }}
               <a href="#" target="_blank">{{ $t('Thể lệ chương trình') }}</a>
-              {{ $t('quy định bởi Hano Smart') }}
             </label>
           </div>
 
@@ -111,6 +109,46 @@ function submit() {
   </section>
 </template>
 <style scoped>
+.register-sub span {
+  /* Font & Định dạng cơ bản */
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* Màu sắc gốc của chữ */
+  color: #FFF;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+
+  /* Tạo viền trắng bao quanh chữ (thay cho border 0.66px) */
+  /* Cách này giúp viền trắng không lấn vào màu cam của chữ */
+  paint-order: stroke fill;
+  -webkit-text-stroke: 1px #F15A24; /* Gấp đôi thông số border để bù phần bị lấn */
+
+  /* Hiệu ứng đổ bóng (box-shadow từ Figma chuyển sang drop-shadow cho text) */
+  filter: drop-shadow(-1px 1px 1px rgba(207, 54, 0, 0.4));
+
+  /* Kỹ thuật tạo viền trắng dày + Bóng đổ mờ phía sau */
+  text-shadow:
+    /* Viền trắng 1px bao quanh */
+      -1px -1px 0 #CF360033,
+      1px -1px 0 #CF360033,
+      -1px  1px 0 #CF360033,
+      1px  1px 0 #CF360033,
+      0  1px 0 #CF360033,
+      0 -1px 0 #CF360033,
+      1px  0 0 #CF360033,
+      -1px  0 0 #CF360033,
+
+        /* Bóng đổ qua TRÁI – ĐẬM */
+      -2px 2px 3px rgba(211, 107, 61, 0.85);
+}
+
 @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(-4px); }
@@ -138,6 +176,14 @@ function submit() {
   position: relative;
   overflow: visible;
 }
+
+
+.box-header .img-header {
+  width: 160px;
+  height: 160px;
+  margin-top: -105px;
+}
+
 
 .box-header-left {
   position: relative;
@@ -170,8 +216,8 @@ function submit() {
 }
 
 .register-title {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   text-align: center;
   margin-bottom: 10px;
   color: #fff;
@@ -189,7 +235,7 @@ function submit() {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  border: 2px solid #ff7a00;
+  border: 2px solid rgba(255, 255, 255, 0.85);
   border-radius: 4px;
   cursor: pointer;
   position: relative;
