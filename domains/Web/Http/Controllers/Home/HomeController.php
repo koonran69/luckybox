@@ -88,8 +88,8 @@ class HomeController extends Controller
         } else {
             //Kiểm tra phone có thuộc phone đang sét phần thưởng không
             $arrPhoneHartReward = [
-                '0392826477' => 'FIRST_PRIZE_GOLD',
-                '0392826444' => 'THIRD_PRIZE_MIBAND',
+//                '0392826477' => 'FIRST_PRIZE_GOLD',
+//                '0392826444' => 'THIRD_PRIZE_MIBAND',
             ];
             //Kiểm tra phone có thuộc phone đang sét phần thưởng không
             if (array_key_exists($user->phone, $arrPhoneHartReward)) {

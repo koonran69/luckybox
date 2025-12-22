@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/types/index.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +241,7 @@
       <workItem from="1766293183116" duration="555000" />
       <workItem from="1766294982287" duration="26669000" />
       <workItem from="1766326386311" duration="2116000" />
-      <workItem from="1766370900590" duration="2268000" />
+      <workItem from="1766370900590" duration="2370000" />
     </task>
     <servers />
   </component>
