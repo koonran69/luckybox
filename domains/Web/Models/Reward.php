@@ -3,9 +3,7 @@
 namespace Domains\Web\Models;
 
 use Domains\Core\Enums\DefaultActive;
-use Domains\Core\Enums\RewardHistoryStatus;
 use Domains\Core\Supports\Eloquent\BaseModel;
-use Domains\User\Models\User;
 
 class Reward extends BaseModel
 {
