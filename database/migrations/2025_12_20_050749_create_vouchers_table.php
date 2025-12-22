@@ -17,6 +17,7 @@ return new class extends Migration
             // Loại phần thưởng
             $table->string('code')->unique(); // VD: FIRST_PRIZE_GOLD, SECOND_PRIZE_CAMERA, LUCKY_MESSAGE
             $table->string('image')->nullable()->comment('Hình ảnh phần thưởng (url hoặc path)');
+            $table->string('image_home')->nullable()->comment('Hình ảnh phần thưởng (url hoặc path)');
             $table->string('name');            // Tên giải
             $table->text('description')->nullable(); // Mô tả chi tiết
             // Phân loại: physical: quà hiện vật, virtual: cơ hội quay / voucher, message: lời chúc

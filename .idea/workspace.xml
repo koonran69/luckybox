@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2025_12_20_050749_create_vouchers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_12_20_050749_create_vouchers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +244,7 @@
       <workItem from="1766326386311" duration="2116000" />
       <workItem from="1766370900590" duration="13057000" />
       <workItem from="1766387320992" duration="28000" />
-      <workItem from="1766387968027" duration="9253000" />
+      <workItem from="1766387968027" duration="11146000" />
     </task>
     <servers />
   </component>
