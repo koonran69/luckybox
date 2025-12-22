@@ -37,7 +37,7 @@ function getNameTopReward(reward: RewardData){
           <div class="col-12" v-for="reward in props.rewards">
             <div class="card d-flex align-items-center">
               <div class="card-img">
-                <img v-if="reward.image" :src="asset(reward.image)" class="reward-image" :class="reward.code" />
+                <img v-if="reward.image_home" :src="asset(reward.image_home)" class="reward-image" :class="reward.code" />
               </div>
               <div class="card-content">
                 <div class="reward-name">{{ getNameTopReward(reward) }}</div>

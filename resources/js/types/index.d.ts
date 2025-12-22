@@ -14,6 +14,7 @@ export type RewardData = {
     id: number;
     code: string;
     image: string;
+    image_home: string;
     name: string;
     description: string;
     category: string;

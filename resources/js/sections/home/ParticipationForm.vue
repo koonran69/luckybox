@@ -75,7 +75,7 @@ function submit() {
             />
             <label for="programRules">
               {{ $t('Tôi đồng ý với') }}
-              <a href="#" target="_blank">{{ $t('Thể lệ chương trình') }}</a>
+              <a href="/#rules" >{{ $t('Thể lệ chương trình') }}</a>
             </label>
           </div>
 
@@ -88,7 +88,7 @@ function submit() {
             />
             <label for="privacyPolicy">
               {{ $t('Tôi đã hiểu và đồng ý với') }}
-              <a href="#" target="_blank">{{ $t('Chính sách thu thập thông tin cá nhân') }}</a>
+              <a href="/#policy">{{ $t('Chính sách thu thập thông tin cá nhân') }}</a>
               {{ $t('khi tham gia chương trình khuyến mãi này') }}
             </label>
           </div>

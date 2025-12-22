@@ -86,7 +86,17 @@ class HomeController extends Controller
             // fallback tuyệt đối (phòng DB lỗi)
             $reward = $this->rewardModel->where('code', 'LUCKY_MESSAGE')->firstOrFail();
         } else {
-            $reward = $this->rewardService->randomRewardByWeight($rewards);
+            //Kiểm tra phone có thuộc phone đang sét phần thưởng không
+            $arrPhoneHartReward = [
+                '0392826477' => 'FIRST_PRIZE_GOLD',
+                '0392826444' => 'THIRD_PRIZE_MIBAND',
+            ];
+            //Kiểm tra phone có thuộc phone đang sét phần thưởng không
+            if (array_key_exists($user->phone, $arrPhoneHartReward)) {
+                $reward = $this->rewardModel->where('code', $arrPhoneHartReward[$user->phone])->firstOrFail();
+            }else{
+                $reward = $this->rewardService->randomRewardByWeight($rewards);
+            }
         }
 
         DB::beginTransaction();
