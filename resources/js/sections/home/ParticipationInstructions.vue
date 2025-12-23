@@ -14,67 +14,65 @@ const { t } = useI18n();
 </script>
 <template>
   <section class="my-5" id="guide">
-    <div class="container-md">
-      <div class="title-section d-flex justify-content-center">
-        <h1 class="title-lk">{{$t('Hướng dẫn tham gia')}}</h1>
-      </div>
-      <div class="list-card-instruction mt-3">
-        <div class="row g-3">
+    <div class="title-section d-flex justify-content-center">
+      <h1 class="title-lk">{{$t('Hướng dẫn tham gia')}}</h1>
+    </div>
+    <div class="list-card-instruction mt-3">
+      <div class="row g-3">
+        <div class="col-6">
+          <div class="card">
+            <div class="card-img">
+              <img :src="asset('/assets/images/instruct-1.png')" class="instruct-img" />
+            </div>
+            <div class="card-content">
+              <div class="instruct-phase">{{ $t('Bước 1:') }}</div>
+              <div class="instruct-content">Khách hàng Quét QR Code trên phiếu tham gia dự thưởng có trong mỗi vali của Bamozo. Hoặc truy cập đường link <a target="_blank" href="https://bamozo.vn/minigame">https://bamozo.vn/minigame</a> được gắn trên fanpage Bamozo.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-img">
+              <img :src="asset('/assets/images/instruct-2.png')" class="instruct-img" />
+            </div>
+            <div class="card-content">
+              <div class="instruct-phase">{{ $t('Bước 2:') }}</div>
+              <div class="instruct-content">Khách hàng điền thông tin tại mục THÔNG TIN THAM GIA.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-img">
+              <img :src="asset('/assets/images/instruct-3.png')" class="instruct-img" />
+            </div>
+            <div class="card-content">
+              <div class="instruct-phase">{{ $t('Bước 3:') }}</div>
+              <div class="instruct-content">Chọn THAM GIA NGAY để Bamozo ghi nhận thông tin tham gia của khách hàng.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card">
+            <div class="card-img">
+              <img :src="asset('/assets/images/instruct-4.png')" class="instruct-img" />
+            </div>
+            <div class="card-content">
+              <div class="instruct-phase">{{ $t('Bước 4:') }}</div>
+              <div class="instruct-content">Khách hàng tham gia lật hình may mắn và nhận thông báo kết quả trúng thưởng.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
           <div class="col-6">
             <div class="card">
               <div class="card-img">
-                <img :src="asset('/assets/images/instruct-1.png')" class="instruct-img" />
+                <img :src="asset('/assets/images/instruct-5.png')" class="instruct-img" />
               </div>
               <div class="card-content">
-                <div class="instruct-phase">{{ $t('Bước 1:') }}</div>
-                <div class="instruct-content">Khách hàng Quét QR Code trên phiếu tham gia dự thưởng có trong mỗi vali của Bamozo. Hoặc truy cập đường link <a target="_blank" href="https://bamozo.vn/minigame">https://bamozo.vn/minigame</a> được gắn trên fanpage Bamozo.</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <div class="card-img">
-                <img :src="asset('/assets/images/instruct-2.png')" class="instruct-img" />
-              </div>
-              <div class="card-content">
-                <div class="instruct-phase">{{ $t('Bước 2:') }}</div>
-                <div class="instruct-content">Khách hàng điền thông tin tại mục THÔNG TIN THAM GIA.</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <div class="card-img">
-                <img :src="asset('/assets/images/instruct-3.png')" class="instruct-img" />
-              </div>
-              <div class="card-content">
-                <div class="instruct-phase">{{ $t('Bước 3:') }}</div>
-                <div class="instruct-content">Chọn THAM GIA NGAY để Bamozo ghi nhận thông tin tham gia của khách hàng.</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card">
-              <div class="card-img">
-                <img :src="asset('/assets/images/instruct-4.png')" class="instruct-img" />
-              </div>
-              <div class="card-content">
-                <div class="instruct-phase">{{ $t('Bước 4:') }}</div>
-                <div class="instruct-content">Khách hàng tham gia lật hình may mắn và nhận thông báo kết quả trúng thưởng.</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <div class="col-6">
-              <div class="card">
-                <div class="card-img">
-                  <img :src="asset('/assets/images/instruct-5.png')" class="instruct-img" />
-                </div>
-                <div class="card-content">
-                  <div class="instruct-phase">{{ $t('Bước 5:') }}</div>
-                  <div class="instruct-content">
-                    BTC Bamozo sẽ trực tiếp liên hệ qua số điện thoại khách hàng đã đăng ký để xác nhận và hướng dẫn nhận quà.
-                  </div>
+                <div class="instruct-phase">{{ $t('Bước 5:') }}</div>
+                <div class="instruct-content">
+                  BTC Bamozo sẽ trực tiếp liên hệ qua số điện thoại khách hàng đã đăng ký để xác nhận và hướng dẫn nhận quà.
                 </div>
               </div>
             </div>

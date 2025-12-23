@@ -57,6 +57,7 @@ footer {
   border-top: 2px solid #F15A24;
   background-color: #FFF5F2;
   padding-bottom: 9rem;
+  margin-top: 5rem;
 }
 .footer-body .footer-logo{
   max-width: 120px;

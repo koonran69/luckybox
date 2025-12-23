@@ -109,6 +109,21 @@ function submit() {
   </section>
 </template>
 <style scoped>
+
+@media (min-width: 768px) {
+  .register-card form {
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box-header .img-header{
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
 .register-sub span {
   /* Font & Định dạng cơ bản */
   font-weight: 900;
@@ -169,12 +184,16 @@ function submit() {
   background-color: #F15A24;
   background-image: url("/assets/images/partern.png");
 
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   background-position: center top;
   background-size: auto;
 
   position: relative;
   overflow: visible;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

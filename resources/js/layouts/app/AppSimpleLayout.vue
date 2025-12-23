@@ -4,6 +4,7 @@ import AppHeader from '@/components/AppHeader.vue';
 import AppFooter from '@/components/AppFooter.vue';
 import AppContent from '@/components/AppContent.vue';
 import BottomNavigation from "@/components/BottomNavigation.vue";
+import { useScreen } from '@/composables/useScreen';
 
 interface Props {
     transparent?: boolean;
@@ -12,14 +13,15 @@ interface Props {
 withDefaults(defineProps<Props>(), {
     transparent: false
 })
-
+const { isMobile } = useScreen()
 </script>
 <template>
     <AppShell>
+      <AppHeader />
         <AppContent>
             <slot />
         </AppContent>
         <AppFooter />
-      <BottomNavigation />
+      <BottomNavigation v-if="isMobile" />
     </AppShell>
 </template>

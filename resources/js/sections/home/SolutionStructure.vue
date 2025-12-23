@@ -28,21 +28,19 @@ function getNameTopReward(reward: RewardData){
 </script>
 <template>
   <section class="mt-5">
-    <div class="container-md">
-      <div class="title-section d-flex justify-content-center">
-        <h1 class="title-lk">{{$t('CƠ CẤU GIẢI')}}</h1>
-      </div>
-      <div class="list-card-reward mt-5">
-        <div class="row">
-          <div class="col-12" v-for="reward in props.rewards">
-            <div class="card d-flex align-items-center">
-              <div class="card-img">
-                <img v-if="reward.image_home" :src="asset(reward.image_home)" class="reward-image" :class="reward.code" />
-              </div>
-              <div class="card-content">
-                <div class="reward-name">{{ getNameTopReward(reward) }}</div>
-                <div class="reward-desc">{{ reward.description }}</div>
-              </div>
+    <div class="title-section d-flex justify-content-center">
+      <h1 class="title-lk">{{$t('CƠ CẤU GIẢI')}}</h1>
+    </div>
+    <div class="list-card-reward mt-5">
+      <div class="row">
+        <div class="col-12" v-for="reward in props.rewards">
+          <div class="card d-flex align-items-center">
+            <div class="card-img">
+              <img v-if="reward.image_home" :src="asset(reward.image_home)" class="reward-image" :class="reward.code" />
+            </div>
+            <div class="card-content">
+              <div class="reward-name">{{ getNameTopReward(reward) }}</div>
+              <div class="reward-desc">{{ reward.description }}</div>
             </div>
           </div>
         </div>
@@ -51,6 +49,37 @@ function getNameTopReward(reward: RewardData){
   </section>
 </template>
 <style scoped>
+@media (min-width: 768px) {
+  .list-card-reward .card {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .card-img {
+    max-width: 200px !important;
+  }
+
+  /* Giải nhất */
+  .reward-image.FIRST_PRIZE_GOLD {
+    height: 150px !important;
+  }
+
+  .reward-image.SECOND_PRIZE_CAMERA {
+    height: 150px !important;
+  }
+
+  .reward-image.THIRD_PRIZE_MIBAND {
+    height: 170px !important;
+    bottom: -10px;
+  }
+
+  .reward-image.CONSOLATION_PILLOW{
+    height: 130px !important;
+    transform: rotate(20deg);
+    bottom: 10px;
+  }
+}
+
 /* ===== LIST CARD ===== */
 .list-card-reward {
   margin-top: 16px;

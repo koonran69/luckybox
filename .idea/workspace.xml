@@ -5,9 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/banner-final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/banner-pc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/composables/useClipboard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/composables/useCountdownSendOTP.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/composables/useDiscount.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/composables/usePageLoader.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/composables/useRecaptchaGoogle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/composables/useScreen.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2025_12_20_050749_create_vouchers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_12_20_050749_create_vouchers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AppShell.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppShell.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Banner.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/layouts/app/AppSimpleLayout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/layouts/app/AppSimpleLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,33 +197,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev/the-v1",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Applications/MAMP/htdocs/luckybox",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev/the-v1&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/resources/js&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js" />
+      <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/assets/files" />
       <recent name="$PROJECT_DIR$/resources/views/cms/rewards/datatable" />
-      <recent name="$PROJECT_DIR$/routes/cms" />
-      <recent name="$PROJECT_DIR$/resources/views/cms" />
     </key>
   </component>
   <component name="RunManager">
@@ -244,7 +262,10 @@
       <workItem from="1766326386311" duration="2116000" />
       <workItem from="1766370900590" duration="13057000" />
       <workItem from="1766387320992" duration="28000" />
-      <workItem from="1766387968027" duration="11146000" />
+      <workItem from="1766387968027" duration="12493000" />
+      <workItem from="1766458952303" duration="1404000" />
+      <workItem from="1766477726756" duration="4472000" />
+      <workItem from="1766482222692" duration="291000" />
     </task>
     <servers />
   </component>
@@ -281,13 +302,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue</url>
-          <line>221</line>
+          <line>264</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/components/BottomNavigation.vue</url>
           <line>125</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue</url>
+          <line>293</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

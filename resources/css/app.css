@@ -173,7 +173,7 @@ body {
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    background: #FFF;
+    background: #f3f4f6;
 }
 
 #app-wrapper {
@@ -349,8 +349,8 @@ textarea.form-control {
     background-color: rgba(238, 236, 232, 1);
 }
 
-.page.has-transparent .page-body {
-    margin-top: 0;
+.page.has-transparent .page-body, .page-body {
+    margin-top: 0 !important;
 }
 
 /* Thêm transition cho cả vào/ra */
