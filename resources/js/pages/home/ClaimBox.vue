@@ -184,6 +184,15 @@ onMounted(() => {
 </template>
 
 <style scoped>
+@media (min-width: 768px) {
+  .claim-box {
+    margin-top: 6rem;
+    max-width: 600px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 .reward-modal-backdrop .img-header{
   margin-top: -180px;
 }
