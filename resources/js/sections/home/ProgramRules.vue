@@ -292,6 +292,7 @@ const closePolicyModal = () => {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   background-color: #FFF;
   color: #333;
+  margin-bottom: 6rem !important;
 
   display: flex;
   flex-direction: column;
