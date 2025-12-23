@@ -98,7 +98,7 @@ function getNameTopReward(reward: RewardData){
   gap: 14px;
   border-radius: 16px;
   background: linear-gradient(277.4deg, #FFE2D8 0.43%, #FFF0EA 55.6%, #FFB094 107.65%);
-  border: 1px solid #F15A24;
+  border: 1px solid #f15a25;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -176,7 +176,7 @@ function getNameTopReward(reward: RewardData){
   text-transform: uppercase;
 
   /* Màu sắc gốc của chữ */
-  color: #F15A24;
+  color: #f15a25;
 
   /* Tạo viền trắng bao quanh chữ (thay cho border 0.66px) */
   /* Cách này giúp viền trắng không lấn vào màu cam của chữ */

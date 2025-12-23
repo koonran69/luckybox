@@ -64,11 +64,11 @@ const closePolicyModal = () => {
                 <ul>
                   <li>
                     <strong>Thời gian tham gia:</strong>
-                    Từ ngày <strong>01/01/2025</strong> đến <strong>23h59 ngày 28/02/2025</strong>
+                    Từ ngày <strong>01/01/2026</strong> đến <strong>23h59 ngày 28/02/2026</strong>
                   </li>
                   <li>
                     <strong>Thời gian đóng cổng tham gia:</strong>
-                    23h59 ngày 28/02/2025
+                    23h59 ngày 28/02/2026
                   </li>
                   <li>
                     <strong>Thời gian công bố kết quả:</strong>

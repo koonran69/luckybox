@@ -83,7 +83,7 @@ class RewardSeeder extends Seeder
                 'code' => 'LUCKY_MESSAGE',
                 'image' => '/assets/images/reward-loi-chuc-full.png',
                 'image_home' => null,
-                'name' => 'Lời chúc may mắn',
+                'name' => 'Nhận lời chúc may mắn',
                 'description' => 'Hành trình mang Tết về nhà của bạn vẫn tiếp tục ✨ Khám phá thêm các mẫu vali Bamozo để gói trọn những chuyến đi sắp tới nhé!',
                 'category' => 'message',
                 'display_value' => null,

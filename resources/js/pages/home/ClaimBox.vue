@@ -253,7 +253,7 @@ onMounted(() => {
   padding: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
-  background-color: #F15A24;
+  background-color: #f15a25;
   background-image: url("/assets/images/partern.png");
 
   background-repeat: no-repeat;
@@ -381,7 +381,7 @@ onMounted(() => {
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  background-color: #F15A24;
+  background-color: #f15a25;
   background-image: url("/assets/images/partern.png");
   background-repeat: no-repeat;
   background-position: center top;

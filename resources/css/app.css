@@ -73,7 +73,7 @@ p{
     opacity: 1;
     gap: 10px;
     background: #FFF0EA;
-    color: #F15A24;
+    color: #f15a25;
     font-weight: 700;
     font-size: 16px;
     padding: 8px 10px;
@@ -85,7 +85,7 @@ p{
 .btn-orange-theme:hover{
     border: 1px solid #802200;
     background-color: #FFDFD3;
-    color: #F15A24;
+    color: #f15a25;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(39, 64, 111, 0.3);
 }

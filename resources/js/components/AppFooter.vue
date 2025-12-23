@@ -51,10 +51,10 @@ import {asset} from "@/lib/utils";
   padding: 10px 0;
 }
 .footer-bottom span{
-  color: #F15A24;
+  color: #f15a25;
 }
 footer {
-  border-top: 2px solid #F15A24;
+  border-top: 2px solid #f15a25;
   background-color: #FFF5F2;
   padding-bottom: 9rem;
   margin-top: 5rem;
@@ -70,10 +70,10 @@ footer {
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
-  color: #F15A24;
+  color: #f15a25;
 }
 .contact-address svg{
-  fill: #F15A24;
+  fill: #f15a25;
   width: 20px;
   height: 20px;
 }

@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/RewardSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/files/the-le-chuong-trinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/files/the-le-chuong-trinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AppHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/BottomNavigation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BottomNavigation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/home/ClaimBox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationInstructions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ProgramRules.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/SolutionStructure.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +257,7 @@
       <workItem from="1766458952303" duration="1404000" />
       <workItem from="1766477726756" duration="4472000" />
       <workItem from="1766482222692" duration="2208000" />
-      <workItem from="1766485899631" duration="924000" />
+      <workItem from="1766485899631" duration="2114000" />
     </task>
     <servers />
   </component>

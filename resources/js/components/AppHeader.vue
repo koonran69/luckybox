@@ -89,7 +89,7 @@ onMounted(() => {
 }
 
 .pc-menu a:hover {
-  color: #F15A24;
+  color: #f15a25;
 }
 
 /* CTA PLAY */

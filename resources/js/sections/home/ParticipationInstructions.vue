@@ -85,7 +85,7 @@ const { t } = useI18n();
 <style scoped>
 .list-card-instruction .card {
   border-radius: 20px;
-  border: 1px solid #F15A24;
+  border: 1px solid #f15a25;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   height: 100%;
 
@@ -108,7 +108,7 @@ const { t } = useI18n();
 }
 
 .instruct-phase{
-  color: #F15A24;
+  color: #f15a25;
   font-weight: 600;
   font-size: 16px;
   text-transform: capitalize;
