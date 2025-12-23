@@ -214,7 +214,7 @@ onMounted(() => {
     line-height: 1.45 !important;
   }
   .reward-modal-backdrop .reward-modal-footer .btn {
-    padding: 10px 12px !important;
+    padding: 5px 6px !important;
     font-size: 12px !important;
   }
 }
@@ -424,7 +424,7 @@ onMounted(() => {
 }
 
 .reward-modal-backdrop .reward-modal-footer {
-  margin-top: 16px; /* cách modal body */
+  margin-top: 10px; /* cách modal body */
 }
 
 .reward-modal-backdrop .btn-orange {
@@ -458,7 +458,7 @@ onMounted(() => {
   font-size: 22px;
   font-weight: 900;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-transform: uppercase;
   font-style: italic;
 }
