@@ -184,6 +184,40 @@ onMounted(() => {
 </template>
 
 <style scoped>
+@media (max-width: 767px) {
+  .reward-modal-backdrop .reward-modal {
+    max-height: 65vh !important;
+    max-width: 300px !important;
+    overflow-y: auto;
+    margin-bottom: 5rem;
+  }
+  .reward-modal-backdrop .reward-modal-body .reward-image {
+    max-width: 140px !important;
+    width: 100%;
+    max-height: 140px !important;
+    height: 100%;
+  }
+  .reward-modal-backdrop .img-header {
+    margin-top: -120px !important;
+    max-width: 160px;
+  }
+  .reward-modal-backdrop .reward-title {
+    font-size: 18px !important;
+  }
+
+  .reward-modal-backdrop .reward-name {
+    font-size: 18px !important;
+  }
+
+  .reward-modal-backdrop .reward-desc {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+  }
+  .reward-modal-backdrop .reward-modal-footer .btn {
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+  }
+}
 @media (min-width: 768px) {
   .claim-box {
     margin-top: 6rem;
@@ -404,12 +438,13 @@ onMounted(() => {
 }
 
 .reward-modal-backdrop .reward-modal-body .reward-image {
-  width: 220px;
-  height: 260px;
+  max-width: 220px;
+  width: 100%;
+  max-height: 260px;
+  height: 100%;
   object-fit: contain;
   margin-bottom: 12px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .reward-modal-backdrop .reward-title {
