@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/1FTV-Photograph-Signature.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/1FTV-VIP-Akeila.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Black Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Black.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Bold Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Heavy Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Heavy.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Light Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Medium Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Medium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy SemiBold Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy SemiBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Thin Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Thin.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy XBold Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy XBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Xlight Italic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/fonts/SVN-Gilroy/SVN-Gilroy Xlight.otf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,33 +201,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev/the-v2-pc&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/resources/js&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev/the-v2-pc",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Applications/MAMP/htdocs/luckybox/public/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Applications/MAMP/htdocs/luckybox/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets" />
       <recent name="$PROJECT_DIR$/resources/js" />
       <recent name="$PROJECT_DIR$/public/assets/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public/assets/files" />
-      <recent name="$PROJECT_DIR$/resources/views/cms/rewards/datatable" />
     </key>
   </component>
   <component name="RunManager">
@@ -247,7 +270,7 @@
       <workItem from="1766458952303" duration="1404000" />
       <workItem from="1766477726756" duration="4472000" />
       <workItem from="1766482222692" duration="2208000" />
-      <workItem from="1766485899631" duration="5599000" />
+      <workItem from="1766485899631" duration="7806000" />
     </task>
     <servers />
   </component>

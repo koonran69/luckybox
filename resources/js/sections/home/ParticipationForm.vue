@@ -126,6 +126,7 @@ function submit() {
 
 .register-sub span {
   /* Font & Định dạng cơ bản */
+  font-family: 'SVN-Gilroy', sans-serif;
   font-weight: 900;
   font-style: italic;
   font-size: 16px;
