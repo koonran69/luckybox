@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/notification.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/vi/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/vi/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Middleware/HandleInertiaRequests.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Middleware/HandleInertiaRequests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Requests/SubmitParticipationRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/remaining_quantity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/remaining_quantity.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/total_quantity.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cms/rewards/datatable/total_quantity.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +254,7 @@
       <workItem from="1766485899631" duration="9234000" />
       <workItem from="1766558678282" duration="288000" />
       <workItem from="1766564661830" duration="1225000" />
-      <workItem from="1766571308820" duration="314000" />
+      <workItem from="1766571308820" duration="2571000" />
     </task>
     <servers />
   </component>
@@ -285,7 +286,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/resources/js/sections/home/ParticipationForm.vue</url>
-          <line>25</line>
+          <line>28</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

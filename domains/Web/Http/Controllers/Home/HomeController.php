@@ -180,6 +180,13 @@ class HomeController extends Controller
     {
         $data = $request->validated();
 
+        $exitUser = $this->userModel->where('phone', $data['phone'])->orwhere('email', $data['email'])->first();
+        if($exitUser){
+            return back()->with([
+                'show_notification' => true,
+            ]);
+        }
+
         //Tạo thông tin user và cộng một lượt quay nếu user mới (Kiểm tra theo phone)
         $user = $this->userModel->firstOrCreate(
             [

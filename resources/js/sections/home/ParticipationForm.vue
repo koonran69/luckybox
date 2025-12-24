@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import HomeController from '@/actions/Domains/Web/Http/Controllers/Home/HomeController';
 import InputError from '@/components/ui/InputError.vue';
-import { Form, Link, useForm } from '@inertiajs/vue3';
+import { Form, Link, useForm, usePage } from '@inertiajs/vue3';
 import { toast } from 'vue-sonner';
 import { ref } from 'vue';
 import {asset} from "@/lib/utils";
 interface Props {
   genders: Record<string, string>
 }
+const page = usePage();
 const props = defineProps<Props>();
 const acceptedTerms = ref(false);
 const acceptedProgramRules = ref(false);
+
+const showNotifyModal = ref(false);
 
 const form = useForm({
   fullname: '',
@@ -27,14 +30,18 @@ function submit() {
   form.post(url, {
     preserveScroll: true,
     onSuccess: () => {
-      form.reset()
+      console.log(page.props.flash)
+      if (page.props.flash?.show_notification) {
+        showNotifyModal.value = true;
+      }else{
+        form.reset()
+      }
     },
     onError: (errors) => {
       Object.values(errors).forEach((msg: any, index) => {
         toast.error(msg as string, {
           id: `error-${index}-${Date.now()}`,
         });
-        retunr;
       });
     },
   })
@@ -108,8 +115,176 @@ function submit() {
       </div>
     </div>
   </section>
+
+  <!-- Modal Reward -->
+  <transition name="fade">
+    <div v-if="showNotifyModal" class="notify-modal-backdrop" @click.self="showNotifyModal = false">
+      <div class="notify-modal">
+        <button class="notify-close" @click="showNotifyModal = false">×</button>
+        <div class="notify-modal-body">
+          <img :src="asset('assets/images/notification.png')" class="notify-image"/>
+          <div class="notify-title">
+            Cảm ơn bạn đã đồng hành cùng Bamozo!
+          </div>
+          <div class="notify-desc">Bamozo đã ghi nhận lượt tham gia của bạn trước đó Cảm ơn bạn đã đồng hành cùng Bamozo!</div>
+        </div>
+        <div class="notify-modal-footer">
+          <a class="btn btn-orange-theme flex-fill text-uppercase" target="_blank" href="https://bamozo.vn/">ĐÃ HIỂU & GHÉ THĂM MAMOZO</a>
+        </div>
+      </div>
+    </div>
+  </transition>
+
 </template>
 <style scoped>
+.notify-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+.notify-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.notify-modal-backdrop .notify-modal {
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  background-color: #ef6323;
+  background-image: url("/assets/images/partern.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 380px;
+  height: auto;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  overflow: visible;
+}
+/* VIỀN NGOÀI */
+.notify-modal-backdrop .notify-modal::before {
+  content: "";
+  position: absolute;
+  inset: -8px; /* outside stroke 8px */
+  border-radius: 28px;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: linear-gradient(
+      180deg,
+      rgba(255,255,255,0.6),
+      rgba(255,255,255,0.25)
+  );
+
+  z-index: -1;
+}
+
+.notify-modal-backdrop .notify-modal-body {
+  flex: 1;           /* chiếm phần còn lại */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* căn giữa nội dung */
+}
+
+.notify-modal-backdrop .notify-modal-footer {
+  margin-top: 10px; /* cách modal body */
+}
+
+.notify-modal-backdrop .btn-orange {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.notify-modal-backdrop .notify-modal-body .notify-image {
+  max-width: 220px;
+  width: 100%;
+  max-height: 260px;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.notify-modal-backdrop .notify-title {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.notify-modal-backdrop .notify-name {
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.notify-modal-backdrop .notify-desc {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 8px;
+}
+@media (max-width: 767px) {
+  .notify-modal-backdrop .notify-modal {
+    max-height: 65vh !important;
+    max-width: 300px !important;
+    overflow-y: auto;
+    margin-bottom: 5rem;
+  }
+  .notify-modal-backdrop .notify-modal-body .notify-image {
+    max-width: 140px !important;
+    width: 100%;
+    max-height: 140px !important;
+    height: 100%;
+  }
+  .notify-modal-backdrop .img-header {
+    margin-top: -120px !important;
+    max-width: 160px;
+  }
+  .notify-modal-backdrop .notify-title {
+    font-size: 18px !important;
+  }
+
+  .notify-modal-backdrop .notify-name {
+    font-size: 18px !important;
+  }
+
+  .notify-modal-backdrop .notify-desc {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+  }
+  .notify-modal-backdrop .notify-modal-footer .btn {
+    padding: 5px 6px !important;
+    font-size: 12px !important;
+  }
+}
 
 @media (min-width: 768px) {
   .register-card form {
