@@ -9,8 +9,8 @@ interface Props {
   genders: Record<string, string>
 }
 const props = defineProps<Props>();
-const acceptedTerms = ref(true);
-const acceptedProgramRules = ref(true);
+const acceptedTerms = ref(false);
+const acceptedProgramRules = ref(false);
 
 const form = useForm({
   fullname: '',
