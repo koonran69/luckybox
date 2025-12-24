@@ -83,6 +83,22 @@ const { t } = useI18n();
   </section>
 </template>
 <style scoped>
+.list-card-instruction .card-img {
+  width: 100%;
+
+  overflow: hidden;           /* chặn ảnh tràn */
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-card-instruction .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .list-card-instruction .card {
   border-radius: 27px;
   border: 1px solid #ef6323;
