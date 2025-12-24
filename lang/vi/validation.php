@@ -11,13 +11,13 @@ return [
         'phone' => [
             'required' => 'Vui lòng nhập số điện thoại.',
             'regex'    => 'Số điện thoại không đúng định dạng.',
-            'unique'   => 'Số điện thoại này đã được sử dụng.',
+            'unique'   => 'Bamozo đã ghi nhận lượt tham gia của bạn trước đó 😊. Cảm ơn bạn đã đồng hành cùng Bamozo!',
         ],
 
         'email' => [
             'required' => 'Vui lòng nhập email.',
             'email'    => 'Email không đúng định dạng.',
-            'unique'   => 'Email này đã được sử dụng.',
+            'unique'   => 'Bamozo đã ghi nhận lượt tham gia của bạn trước đó 😊. Cảm ơn bạn đã đồng hành cùng Bamozo!',
         ],
 
         'gender' => [

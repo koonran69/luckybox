@@ -1,6 +1,6 @@
 <div class="d-flex gap-1">
     @if($data->code == 'LUCKY_MESSAGE')
-        <span>{{ $data->total_quantity }}</span>
+        <span>N/A</span>
     @else
         <input type="number"
                class="form-control reward-input"

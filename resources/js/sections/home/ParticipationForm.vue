@@ -34,6 +34,7 @@ function submit() {
         toast.error(msg as string, {
           id: `error-${index}-${Date.now()}`,
         });
+        retunr;
       });
     },
   })
