@@ -115,7 +115,7 @@ import {asset} from "@/lib/utils";
 
 
 .mobile-bottom-menu .menu-item svg{
-  fill: #f15a25;
+  fill: #ef6323;
   width: 30px;
   height: 30px;
 }
@@ -134,7 +134,7 @@ import {asset} from "@/lib/utils";
   align-items: center;
 
   background: #FFF5F2;
-  border-top: 1px solid #f15a2566;
+  border-top: 1px solid #ef632366;
 
   padding: 30px 8px 10px;
   z-index: 9999;

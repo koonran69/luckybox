@@ -29,7 +29,7 @@ function getNameTopReward(reward: RewardData){
 <template>
   <section class="mt-5">
     <div class="title-section d-flex justify-content-center">
-      <h1 class="title-lk">{{$t('CƠ CẤU GIẢI')}}</h1>
+      <h1 class="title-lk">{{$t('Cơ cấu giải')}}</h1>
     </div>
     <div class="list-card-reward mt-5">
       <div class="row">
@@ -98,7 +98,7 @@ function getNameTopReward(reward: RewardData){
   gap: 14px;
   border-radius: 16px;
   background: linear-gradient(277.4deg, #FFE2D8 0.43%, #FFF0EA 55.6%, #FFB094 107.65%);
-  border: 1px solid #f15a25;
+  border: 1px solid #ef6323;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -176,7 +176,7 @@ function getNameTopReward(reward: RewardData){
   text-transform: uppercase;
 
   /* Màu sắc gốc của chữ */
-  color: #f15a25;
+  color: #ef6323;
 
   /* Tạo viền trắng bao quanh chữ (thay cho border 0.66px) */
   /* Cách này giúp viền trắng không lấn vào màu cam của chữ */

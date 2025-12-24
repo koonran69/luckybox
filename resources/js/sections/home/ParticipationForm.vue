@@ -143,7 +143,7 @@ function submit() {
   /* Tạo viền trắng bao quanh chữ (thay cho border 0.66px) */
   /* Cách này giúp viền trắng không lấn vào màu cam của chữ */
   paint-order: stroke fill;
-  -webkit-text-stroke: 1px #f15a25; /* Gấp đôi thông số border để bù phần bị lấn */
+  -webkit-text-stroke: 1px #ef6323; /* Gấp đôi thông số border để bù phần bị lấn */
 
   /* Hiệu ứng đổ bóng (box-shadow từ Figma chuyển sang drop-shadow cho text) */
   filter: drop-shadow(-1px 1px 1px rgba(207, 54, 0, 0.4));
@@ -181,7 +181,7 @@ function submit() {
   padding: 20px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 
-  background-color: #f15a25;
+  background-color: #ef6323;
   background-image: url("/assets/images/partern.png");
 
   /*background-repeat: no-repeat;*/

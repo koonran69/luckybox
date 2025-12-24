@@ -73,19 +73,19 @@ p{
     opacity: 1;
     gap: 10px;
     background: #FFF0EA;
-    color: #f15a25;
+    color: #ef6323;
     font-weight: 700;
     font-size: 16px;
     padding: 8px 10px;
-    border: 2px solid #802200;
+    border: 2px solid #ef6323;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
 
 .btn-orange-theme:hover{
-    border: 1px solid #802200;
+    border: 2px solid #ef6323;
     background-color: #FFDFD3;
-    color: #f15a25;
+    color: #ef6323;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(39, 64, 111, 0.3);
 }
@@ -986,7 +986,7 @@ textarea.form-control {
     width: 295px;
     height: 48px;
     opacity: 1;
-    border: 2px solid red;
+    border: 2px solid #ef6323;
     border-radius: 4px;
     padding: 8px 40px;
     gap: 10px;
