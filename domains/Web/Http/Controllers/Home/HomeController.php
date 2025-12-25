@@ -182,7 +182,7 @@ class HomeController extends Controller
             ->where('is_used', false)
             ->get()->count();
 
-        if($openedReward->reward->code != 'LUCKY_MESSAGE'){
+        if($openedReward && $openedReward->reward->code != 'LUCKY_MESSAGE'){
             //Send mail
             $dataSendMail = [
                 'contact' => $user,
