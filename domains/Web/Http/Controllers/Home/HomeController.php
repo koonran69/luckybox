@@ -123,6 +123,17 @@ class HomeController extends Controller
             ]);
 
             DB::commit();
+
+            if($reward->code != 'LUCKY_MESSAGE'){
+                //Send mail
+                $dataSendMail = [
+                    'contact' => $user,
+                    'reward' => $reward,
+                    'sent_at' => now()
+                ];
+                dispatch(new SendMailJobs('receive', $dataSendMail, __('Chúc mừng bạn đã nhận được phần thưởng Minigame!')));
+            }
+
             return back()->with('msg_success', '')
                 ->with(['box_position' => $data['box_position'],
                     'reward' => [
@@ -160,7 +171,7 @@ class HomeController extends Controller
 
         // Đã mở box chưa?
         $openedReward = $this->rewardHistoryModel
-            ->with('reward')
+            ->with(['reward'])
             ->where('user_id', $user->id)
             ->first();
 
@@ -169,6 +180,16 @@ class HomeController extends Controller
             ->where('user_id', $user->id)
             ->where('is_used', false)
             ->get()->count();
+
+        if($openedReward && $openedReward->reward->code != 'LUCKY_MESSAGE'){
+            //Send mail
+            $dataSendMail = [
+                'contact' => $user,
+                'reward' => $openedReward->reward,
+                'sent_at' => now()
+            ];
+            dispatch(new SendMailJobs('receive', $dataSendMail, __('Chúc mừng bạn đã nhận được phần thưởng Minigame!')));
+        }
 
         return Inertia::render('home/ClaimBox', [
             'hasOpened' => (bool)$openedReward,
@@ -231,7 +252,7 @@ class HomeController extends Controller
             'contact' => $data,
             'sent_at' => now()
         ];
-        dispatch(new SendMailJobs('join-now', $dataSendMail, __('Tham gia Minigame!')));
+        dispatch(new SendMailJobs('join-now', $dataSendMail, __('Tham gia Minigame thành công!')));
 
         return to_route('luckyBoxIndex')->with('msg_success', trans('Bạn đã tham gia chương trình thành công!. Chúc bạn may mắn với thẻ quà tặng đã chọn'));
     }

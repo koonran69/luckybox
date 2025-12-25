@@ -10,6 +10,7 @@
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
         }
+
         img {
             -ms-interpolation-mode: bicubic;
             border: 0;
@@ -18,6 +19,7 @@
             outline: none;
             text-decoration: none;
         }
+
         body {
             margin: 0;
             padding: 0;
@@ -32,12 +34,14 @@
             max-width: 680px;
             margin: 28px auto;
         }
+
         .card {
             background: #ffffff;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         }
+
         .card-header {
             padding: 0;
             text-align: center;
@@ -58,7 +62,7 @@
             height: auto;
         }
 
-        .card-header .header-content h1 img {
+        .card-header .header-content h1 img, span img {
             max-width: 25px;
             width: 100%;
             height: auto;
@@ -74,6 +78,7 @@
         .card-body {
             padding: 26px;
         }
+
         p {
             margin: 0 0 14px;
             font-size: 15px;
@@ -154,55 +159,33 @@
                             <a target="_blank" href="{{ url('/') }}">
                                 <img src="{{asset('assets/images/logo.png')}}" alt="Minigame">
                             </a>
-                            <h1>🎉 Tham gia thành công!</h1>
+                            <h1>🎉 Chúc mừng bạn đã nhận được phần thưởng Minigame!</h1>
                         </div>
 
                     </div>
 
                     <!-- Body -->
                     <div class="card-body">
-                        <p>Xin chào <strong>{{ $data['fullname'] ?? 'bạn' }}</strong>,</p>
+                        @case('LUCKY_MESSAGE') <p style="font-weight:600;color:#ef6323;"> 🎉 {{
+                            $reward['message'] ?? 'Chúc bạn tiền vào như nước, tài lộc đầy nhà, vạn sự hanh thông!'
+                        }} </p> @break @case('SECOND_PRIZE_CAMERA') @case('THIRD_PRIZE_MIBAND')
+                        @case('CONSOLATION_PILLOW') <p> 📞 <strong>BTC Bamozo</strong> sẽ liên hệ qua số điện thoại bạn
+                        đã đăng ký để <strong>xác nhận và hướng dẫn nhận quà</strong>. </p>
+                        <p style="margin-bottom:0;"> ⏰ <strong>Thời gian liên hệ & trao quà:</strong><br> Trong vòng
+                            <strong>07 ngày làm việc</strong> kể từ khi kết thúc minigame. </p> @break
+                        @case('FIRST_PRIZE_GOLD') <p style="font-size:16px;font-weight:800;color:#ef6323;"> 🏆 GIẢI ĐẶC
+                        BIỆT </p>
+                        <p> ⏰ <strong>Thời gian quay số:</strong> 28/02 </p>
+                        <p style="margin-bottom:0;"> 📣 Công bố trực tiếp tại <strong>Fanpage chính thức của
+                            Bamozo</strong>.<br> Người trúng giải sẽ được BTC liên hệ trực tiếp trong vòng <strong>07
+                            ngày làm việc</strong> để xác nhận và trao thưởng. </p> @break @endswitch
+                        <p style="font-size:13px;color:#666;"> Thời gian trúng thưởng:
+                            {{ $sent_at->timezone('Asia/Ho_Chi_Minh')->format('d/m/Y H:i') }} </p>
 
-                        <p>
-                            Cảm ơn bạn đã tham gia chương trình <strong>Minigame</strong> của chúng tôi.
-                            Thông tin của bạn đã được ghi nhận thành công.
-                        </p>
-                        <div class="info">
-                            Thông tin tham gia:
-                            @if(!empty($data['email']))
-                            <p>Email: {{$data['email']}}</p>
-                            @endif
-                            @if(!empty($data['phone']))
-                            <p>Số điện thoại: {{$data['phone']}}</p>
-                            @endif
-                        </div>
+                        <p> Một lần nữa xin chúc mừng bạn <span>🎉</span><br> Chúc bạn luôn may mắn và có thật nhiều niềm
+                            vui cùng Minigame! </p>
 
-                        <div class="success-box">
-                            🎮 <strong>Bạn đã được cấp:</strong>
-                            <div class="play-count">
-                                1 lượt chơi
-                            </div>
-                        </div>
-
-                        <p>
-                            Hãy sử dụng lượt chơi của bạn để khám phá những phần quà hấp dẫn đang chờ đón nhé!
-                        </p>
-
-                        <p style="text-align:center; margin:24px 0;">
-                            <a href="{{ url('/lucky-box') }}" class="btn" target="_blank">
-                                🚀 Chơi ngay
-                            </a>
-                        </p>
-
-                        <p class="meta">
-                            Thời gian ghi nhận:
-                            {{ $sent_at->timezone('Asia/Ho_Chi_Minh')->format('d/m/Y H:i') }}
-                        </p>
-
-                        <p style="margin-top:16px;">
-                            Chúc bạn may mắn 🍀<br>
-                            <strong>{{ config('app.name') }}</strong>
-                        </p>
+                        <p> Trân trọng,<br> <strong>{{ config('app.name') }}</strong></p>
                     </div>
 
                     <!-- Footer -->

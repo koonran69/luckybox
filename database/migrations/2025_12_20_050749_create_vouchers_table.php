@@ -52,7 +52,6 @@ return new class extends Migration
             $table->foreignId('reward_id')->constrained('rewards');
             $table->foreignId('spin_ticket_id')->constrained('spin_tickets'); // Lưu lại để biết lượt quay nào sinh ra quà này
             $table->string('status')->default('pending')->comment('pending|received'); // Trạng thái trao quà
-            $table->json('reward')->nullable(); //lưu thông tin reward
             $table->integer('box_position')->nullable(); //vị trí box mở (1-9)
             $table->timestamps();
         });

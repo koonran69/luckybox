@@ -53,6 +53,15 @@
 
         .card-header .header-content img {
             margin-bottom: 6px;
+            max-width: 150px;
+            width: 100%;
+            height: auto;
+        }
+
+        .card-header .header-content h1 img {
+            max-width: 25px;
+            width: 100%;
+            height: auto;
         }
 
         .card-header .header-content h1 {
@@ -152,19 +161,19 @@
 
                     <!-- Body -->
                     <div class="card-body">
-                        <p>Xin chào <strong>{{ $data['fullname'] ?? 'bạn' }}</strong>,</p>
+                        <p>Xin chào <strong>{{ $contact['fullname'] ?? 'bạn' }}</strong>,</p>
 
                         <p>
                             Cảm ơn bạn đã tham gia chương trình <strong>Minigame</strong> của chúng tôi.
                             Thông tin của bạn đã được ghi nhận thành công.
                         </p>
-                        <div class="info">
+                        <div class="info" style="margin-bottom: 1rem">
                             Thông tin tham gia:
-                            @if(!empty($data['email']))
-                            <p>Email: {{$data['email']}}</p>
+                            @if(!empty($contact['email']))
+                            <p style="margin: 0">Email: {{$contact['email']}}</p>
                             @endif
-                            @if(!empty($data['phone']))
-                            <p>Số điện thoại: {{$data['phone']}}</p>
+                            @if(!empty($contact['phone']))
+                            <p style="margin: 0">Số điện thoại: {{$contact['phone']}}</p>
                             @endif
                         </div>
 
@@ -180,7 +189,7 @@
                         </p>
 
                         <p style="text-align:center; margin:24px 0;">
-                            <a href="{{ url('/') }}" class="btn" target="_blank">
+                            <a href="{{ url('/lucky-box') }}" class="btn" target="_blank">
                                 🚀 Chơi ngay
                             </a>
                         </p>

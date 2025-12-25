@@ -167,13 +167,13 @@
                             Cảm ơn bạn đã tham gia chương trình <strong>Minigame</strong> của chúng tôi.
                             Thông tin của bạn đã được ghi nhận thành công.
                         </p>
-                        <div class="info">
+                        <div class="info" style="margin-bottom: 1rem">
                             Thông tin tham gia:
                             @if(!empty($contact['email']))
-                                <p>Email: {{$contact['email']}}</p>
+                                <p style="margin: 0">Email: {{$contact['email']}}</p>
                             @endif
                             @if(!empty($contact['phone']))
-                                <p>Số điện thoại: {{$contact['phone']}}</p>
+                                <p style="margin: 0">Số điện thoại: {{$contact['phone']}}</p>
                             @endif
                         </div>
 
