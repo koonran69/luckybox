@@ -9,6 +9,8 @@ use Domains\User\Models\User;
 use Domains\Web\Enums\RewardCategory;
 use Domains\Web\Http\Controllers\Controller;
 use Domains\Web\Http\Requests\SubmitParticipationRequest;
+use Domains\Web\Jobs\SendMailBookNowJobs;
+use Domains\Web\Jobs\SendMailJobs;
 use Domains\Web\Models\Reward;
 use Domains\Web\Models\RewardHistory;
 use Domains\Web\Models\SpinTicket;
@@ -180,6 +182,13 @@ class HomeController extends Controller
     {
         $data = $request->validated();
 
+        //Send mail
+        $dataSendMail = [
+            'contact' => $data,
+            'sent_at' => now()
+        ];
+        dispatch(new SendMailJobs('join-now', $dataSendMail, __('Tham gia Minigame!')));
+dd(123);
         $exitUser = $this->userModel->where('phone', $data['phone'])->orwhere('email', $data['email'])->first();
         if($exitUser){
             return back()->with([
@@ -215,6 +224,9 @@ class HomeController extends Controller
         session([
             'lucky_user_phone' => $user->phone,
         ]);
+
+
+
         return to_route('luckyBoxIndex')->with('msg_success', trans('Bạn đã tham gia chương trình thành công!. Chúc bạn may mắn với thẻ quà tặng đã chọn'));
     }
 
