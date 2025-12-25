@@ -403,7 +403,7 @@ ckfinder_browser.form = ckfinder_browserForm
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:231
+* @see domains/Web/Http/Controllers/Home/HomeController.php:239
 * @route '/'
 */
 export const home = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -418,7 +418,7 @@ home.definition = {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:231
+* @see domains/Web/Http/Controllers/Home/HomeController.php:239
 * @route '/'
 */
 home.url = (options?: RouteQueryOptions) => {
@@ -427,7 +427,7 @@ home.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:231
+* @see domains/Web/Http/Controllers/Home/HomeController.php:239
 * @route '/'
 */
 home.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -437,7 +437,7 @@ home.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:231
+* @see domains/Web/Http/Controllers/Home/HomeController.php:239
 * @route '/'
 */
 home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -447,7 +447,7 @@ home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:231
+* @see domains/Web/Http/Controllers/Home/HomeController.php:239
 * @route '/'
 */
 const homeForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -457,7 +457,7 @@ const homeForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:231
+* @see domains/Web/Http/Controllers/Home/HomeController.php:239
 * @route '/'
 */
 homeForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -467,7 +467,7 @@ homeForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:231
+* @see domains/Web/Http/Controllers/Home/HomeController.php:239
 * @route '/'
 */
 homeForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({

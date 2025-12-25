@@ -161,7 +161,7 @@
 
                     <!-- Body -->
                     <div class="card-body">
-                        <p>Xin chào <strong>{{ $contact['fullname'] ?? 'bạn' }}</strong>,</p>
+                        <p>Xin chào <strong>{{ $data['fullname'] ?? 'bạn' }}</strong>,</p>
 
                         <p>
                             Cảm ơn bạn đã tham gia chương trình <strong>Minigame</strong> của chúng tôi.
@@ -169,11 +169,11 @@
                         </p>
                         <div class="info">
                             Thông tin tham gia:
-                            @if(!empty($contact['email']))
-                                <p>Email: {{$contact['email']}}</p>
+                            @if(!empty($data['email']))
+                            <p>Email: {{$data['email']}}</p>
                             @endif
-                            @if(!empty($contact['phone']))
-                                <p>Số điện thoại: {{$contact['phone']}}</p>
+                            @if(!empty($data['phone']))
+                            <p>Số điện thoại: {{$data['phone']}}</p>
                             @endif
                         </div>
 
