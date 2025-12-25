@@ -40,7 +40,7 @@ class SendMailJobs implements ShouldQueue
 
         try {
             Mail::send($templateMail, $data, function ($msg) use ($data, $title, $emailTo) {
-                $msg->from(env('MAIL_FROM_ADDRESS', 'no-reply@gmail.com'), env('MAIL_FROM_NAME', 'Insmart'));
+                $msg->from(env('MAIL_FROM_ADDRESS', 'no-reply@gmail.com'), env('MAIL_FROM_NAME', 'Bamozo'));
 
                 $msg->to($emailTo)->subject($title);
             });
