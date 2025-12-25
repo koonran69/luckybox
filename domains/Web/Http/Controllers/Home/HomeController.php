@@ -96,7 +96,7 @@ class HomeController extends Controller
             //Kiểm tra phone có thuộc phone đang sét phần thưởng không
             if (array_key_exists($user->phone, $arrPhoneHartReward)) {
                 $reward = $this->rewardModel->where('code', $arrPhoneHartReward[$user->phone])->firstOrFail();
-            }else{
+            } else {
                 $reward = $this->rewardService->randomRewardByWeight($rewards);
             }
         }
@@ -173,8 +173,8 @@ class HomeController extends Controller
         return Inertia::render('home/ClaimBox', [
             'hasOpened' => (bool)$openedReward,
             'openedReward' => $openedReward,
-            'canSpin'      => $countSpin > 0,
-            'countSpin'    => $countSpin,
+            'canSpin' => $countSpin > 0,
+            'countSpin' => $countSpin,
         ]);
     }
 
@@ -183,7 +183,15 @@ class HomeController extends Controller
         $data = $request->validated();
 
         $exitUser = $this->userModel->where('phone', $data['phone'])->orwhere('email', $data['email'])->first();
-        if($exitUser){
+        if ($exitUser) {
+            //Kiểm tra có lượt chưa dùng thì cho qua quay
+            $exitSpin = $this->spinTicketModel
+                ->where('user_id', $exitUser->id)
+                ->where('is_used', false)
+                ->first();
+            if($exitSpin){
+                return to_route('luckyBoxIndex');
+            }
             return back()->with([
                 'show_notification' => true,
             ]);
@@ -231,8 +239,8 @@ class HomeController extends Controller
     public function index()
     {
         $rewards = $this->rewardModel::where(function ($q) {
-                $q->where('total_quantity', '>', -1);
-            })->get();
+            $q->where('total_quantity', '>', -1);
+        })->get();
         return Inertia::render('home/Index', [
             'rewards' => $rewards,
             'genders' => Gender::asSelectArray(),
