@@ -182,10 +182,10 @@
                             @endif
                         </div>
                         <div class="reward-modal-body">
-                            <img src="{{asset($reward['image'])}}" class="reward-image" width="220"
+                            <img src="{{asset($reward['image'])}}" class="reward-image" width="150"
                                  style="
                                     width:100%;
-                                    max-width:220px;
+                                    max-width:150px;
                                     height:auto;
                                     display:block;
                                     margin:0 auto 12px;
