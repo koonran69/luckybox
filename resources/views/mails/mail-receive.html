@@ -55,14 +55,14 @@
         .card-header .header-content {
         }
 
-        .card-header .header-content img {
+        .card-header .header-content a img {
             margin-bottom: 6px;
             max-width: 150px;
             width: 100%;
             height: auto;
         }
 
-        .card-header .header-content h1 img, span img {
+        span img{
             max-width: 25px;
             width: 100%;
             height: auto;
@@ -140,58 +140,61 @@
 <body>
 <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
     <tr>
-        <td align="center">
+        <td>
             <div class="container">
                 <div class="card">
 
                     <!-- Header -->
-                    <div class="card-header">
+                    <div class="card-header"  align="center">
 
                         <!-- Banner -->
                         <img
                                 src="{{asset('assets/images/banner-final.png')}}"
                                 alt="Minigame Banner"
                                 class="banner"
+                                width="680"
+                                style="width:100%;max-width:680px;display:block;border:0;"
                         >
 
                         <!-- Logo + Title -->
                         <div class="header-content">
                             <a target="_blank" href="{{ url('/') }}">
-                                <img src="{{asset('assets/images/logo.png')}}" alt="Minigame">
+                                <img src="{{asset('assets/images/logo.png')}}" alt="Minigame" width="150"
+                                     style="width:100%;max-width:150px;height:auto;display:block;margin:0 auto;">
                             </a>
-                            <h1>🎉 Chúc mừng bạn đã nhận được phần thưởng Minigame!</h1>
+                            <h1>Chúc mừng bạn đã trúng thưởng minigame từ Bamozo!</h1>
                         </div>
 
                     </div>
 
                     <!-- Body -->
                     <div class="card-body">
-                        @case('LUCKY_MESSAGE') <p style="font-weight:600;color:#ef6323;"> 🎉 {{
-                            $reward['message'] ?? 'Chúc bạn tiền vào như nước, tài lộc đầy nhà, vạn sự hanh thông!'
-                        }} </p> @break @case('SECOND_PRIZE_CAMERA') @case('THIRD_PRIZE_MIBAND')
-                        @case('CONSOLATION_PILLOW') <p> 📞 <strong>BTC Bamozo</strong> sẽ liên hệ qua số điện thoại bạn
-                        đã đăng ký để <strong>xác nhận và hướng dẫn nhận quà</strong>. </p>
-                        <p style="margin-bottom:0;"> ⏰ <strong>Thời gian liên hệ & trao quà:</strong><br> Trong vòng
-                            <strong>07 ngày làm việc</strong> kể từ khi kết thúc minigame. </p> @break
-                        @case('FIRST_PRIZE_GOLD') <p style="font-size:16px;font-weight:800;color:#ef6323;"> 🏆 GIẢI ĐẶC
-                        BIỆT </p>
-                        <p> ⏰ <strong>Thời gian quay số:</strong> 28/02 </p>
-                        <p style="margin-bottom:0;"> 📣 Công bố trực tiếp tại <strong>Fanpage chính thức của
-                            Bamozo</strong>.<br> Người trúng giải sẽ được BTC liên hệ trực tiếp trong vòng <strong>07
-                            ngày làm việc</strong> để xác nhận và trao thưởng. </p> @break @endswitch
-                        <p style="font-size:13px;color:#666;"> Thời gian trúng thưởng:
-                            {{ $sent_at->timezone('Asia/Ho_Chi_Minh')->format('d/m/Y H:i') }} </p>
-
-                        <p> Một lần nữa xin chúc mừng bạn <span>🎉</span><br> Chúc bạn luôn may mắn và có thật nhiều niềm
-                            vui cùng Minigame! </p>
-
-                        <p> Trân trọng,<br> <strong>{{ config('app.name') }}</strong></p>
+                        <p style="margin: 0">Chúc mừng bạn <span style="font-size:18px;">🎉</span></p>
+                        @if($reward['code'] == 'FIRST_PRIZE_GOLD')
+                        <p style="margin: 0">Bạn đã <strong>trúng thưởng cơ hội quay thưởng 2 chỉ vàng</strong> trong minigame "Mở vali - Nhận quà liền tay" từ Bamozo!</p>
+                        <p style="margin: 0"><span style="font-size:18px;">📌</span><strong> Thông tin trao thưởng:</strong></p>
+                        <p style="margin: 0">- Thời gian quay số: 28/02/2026</p>
+                        <p style="margin: 0">- Kết quả được công bố trực tiếp trên Fanpage của Bamozo: <a target="_blank" href="https://www.facebook.com/bamozo/">https://www.facebook.com/bamozo/</a></p>
+                        <p style="margin: 0">- <strong>BTC sẽ liên hệ trực tiếp tới người trúng thưởng trong vòng 7 ngày làm việc</strong> để xác nhận thông tin và hướng dẫn trao thưởng.</p>
+                        @else
+                        <p style="margin: 0">Bạn đã <strong>trúng thưởng minigame "Mở vali - Nhận quà liền tay" từ Bamozo!</strong></p>
+                        <p style="margin: 0"><span style="font-size:18px;">🎁</span><strong>Phần quà của bạn:</strong></p>
+                        <p style="margin: 0" class="reward-name"><strong>{{ $reward['name'] }}</strong></p>
+                        <p style="margin: 0"><span style="font-size:18px;">🎁</span><strong>Thông tin trao thưởng:</strong></p>
+                        <p style="margin: 0"><strong>BTC sẽ liên hệ trực tiếp tới bạn trong vòng 7 ngày làm việc</strong> để xác nhận thông tin và hướng dẫn trao thưởng.</p>
+                        @endif
+                        <p style="margin: 0">Vui lòng để ý điện thoại hoặc email trong thời gian này nhé.</p>
+                        <p style="margin: 0">Hy vọng món quà này sẽ mang đến cho bạn thêm niềm vui và đồng hành cùng bạn trong những hành trình sắp tới <span style="font-size:18px;">💛</span></p>
+                        <p style="margin: 0"><span style="font-size:18px;">👉</span>Follow ngay Fanpage để cập nhật những chương trình mới nhất của Bamozo nha: <a target="_blank" href="https://www.facebook.com/bamozo/">https://www.facebook.com/bamozo/</a></p>
+                        <p style="margin: 0">--------------------------------</p>
+                        <p style="margin: 0">Bamozo - Hành trang của mọi chuyến đi</p>
+                        <p style="margin: 0"><span style="font-size:18px;">☎️ </span> Hotline đặt hàng: 0967.937.669 - 0988.715.698</p>
+                        <p style="margin: 0"><span style="font-size:18px;">☎️ </span> CSKH: 1800 9426</p>
                     </div>
 
                     <!-- Footer -->
-                    <div class="footer">
-                        © {{ date('Y') }} {{ config('app.name') }} — All rights reserved.<br>
-                        Hỗ trợ: <a href="mailto:support@ktechsupport@gmail.com">support@ktechsupport@gmail.com</a>
+                    <div class="footer"  align="center">
+                        © Bản quyền thuộc về K - Solutions
                     </div>
 
                 </div>

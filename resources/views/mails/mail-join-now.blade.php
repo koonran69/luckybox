@@ -135,12 +135,12 @@
 <body>
 <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
     <tr>
-        <td align="center">
+        <td>
             <div class="container">
                 <div class="card">
 
                     <!-- Header -->
-                    <div class="card-header">
+                    <div class="card-header"  align="center">
 
                         <!-- Banner -->
                         <img
@@ -177,7 +177,7 @@
                     </div>
 
                     <!-- Footer -->
-                    <div class="footer">
+                    <div class="footer"  align="center">
                         © Bản quyền thuộc về K - Solutions
                     </div>
 
