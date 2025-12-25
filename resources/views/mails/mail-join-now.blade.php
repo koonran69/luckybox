@@ -156,61 +156,29 @@
                             <a target="_blank" href="{{ url('/') }}">
                                 <img src="{{asset('assets/images/logo.png')}}" alt="Minigame">
                             </a>
-                            <h1><span style="font-size:18px;">🎉</span> Tham gia thành công!</h1>
+                            <h1>Bạn đã tham gia minigame Bamozo thành công <span style="font-size:18px;">🎉</span></h1>
                         </div>
 
                     </div>
 
                     <!-- Body -->
                     <div class="card-body">
-                        <p>Xin chào <strong>{{ $contact['fullname'] ?? 'bạn' }}</strong>,</p>
-
-                        <p>
-                            Cảm ơn bạn đã tham gia chương trình <strong>Minigame</strong> của chúng tôi.
-                            Thông tin của bạn đã được ghi nhận thành công.
-                        </p>
-                        <div class="info" style="margin-bottom: 1rem">
-                            Thông tin tham gia:
-                            @if(!empty($contact['email']))
-                                <p style="margin: 0">Email: {{$contact['email']}}</p>
-                            @endif
-                            @if(!empty($contact['phone']))
-                                <p style="margin: 0">Số điện thoại: {{$contact['phone']}}</p>
-                            @endif
-                        </div>
-
-                        <div class="success-box">
-                            <span style="font-size:18px;">🎮</span> <strong>Bạn đã được cấp:</strong>
-                            <div class="play-count">
-                                1 lượt chơi
-                            </div>
-                        </div>
-
-                        <p>
-                            Hãy sử dụng lượt chơi của bạn để khám phá những phần quà hấp dẫn đang chờ đón nhé!
-                        </p>
-
-                        <p style="text-align:center; margin:24px 0;">
-                            <a href="{{ url('/lucky-box') }}" class="btn" target="_blank">
-                                <span style="font-size:18px;">🚀</span> Chơi ngay
-                            </a>
-                        </p>
-
-                        <p class="meta">
-                            Thời gian ghi nhận:
-                            {{ $sent_at->timezone('Asia/Ho_Chi_Minh')->format('d/m/Y H:i') }}
-                        </p>
-
-                        <p style="margin-top:16px;">
-                            Chúc bạn may mắn <span style="font-size:18px;">🍀</span><br>
-                            <strong>{{ config('app.name') }}</strong>
-                        </p>
+                        <p style="margin: 0">Chào bạn,</p>
+                        <p style="margin: 0">Bamozo đã nhận được lượt tham gia minigame của bạn thành công rồi đó<span style="font-size:18px;">✨</span></p>
+                        <p style="margin: 0">Cảm ơn bạn đã dành thời gian tham gia và đồng hành cùng Bamozo</p>
+                        <p style="margin: 0"><span style="font-size:18px;">👉 </span>Kết quả quay thưởng sẽ được hiển thị ngay sau khi hoàn tất vòng quay.</p>
+                        <p style="margin: 0">Nếu may mắn trúng thưởng, bạn sẽ nhận được <strong>email thông báo tiếp theo từ Bamozo</strong>.</p>
+                        <p style="margin: 0">Chúc bạn một năm mới thật nhiều niềm vui và những chuyến đi nhẹ nhàng hơn cùng Bamozo<span style="font-size:18px;"> 💛</span></p>
+                        <p style="margin: 0"><span style="font-size:18px;">👉 </span>Follow ngay Fanpage để cập nhật những chương trình mới nhất của Bamozo nha: <a target="_blank" href="https://www.facebook.com/bamozo/">https://www.facebook.com/bamozo/</a></p>
+                        <p style="margin: 0">--------------------------------</p>
+                        <p style="margin: 0">Bamozo - Hành trang của mọi chuyến đi</p>
+                        <p style="margin: 0"><span style="font-size:18px;">☎️ </span> Hotline đặt hàng: 0967.937.669 - 0988.715.698</p>
+                        <p style="margin: 0"><span style="font-size:18px;">☎️ </span> CSKH: 1800 9426</p>
                     </div>
 
                     <!-- Footer -->
                     <div class="footer">
-                        © {{ date('Y') }} {{ config('app.name') }} — All rights reserved.<br>
-                        Hỗ trợ: <a href="mailto:support@ktechsupport@gmail.com">support@ktechsupport@gmail.com</a>
+                        © Bản quyền thuộc về K - Solutions
                     </div>
 
                 </div>

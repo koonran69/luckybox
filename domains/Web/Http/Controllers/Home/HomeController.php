@@ -131,7 +131,8 @@ class HomeController extends Controller
                     'reward' => $reward,
                     'sent_at' => now()
                 ];
-                dispatch(new SendMailJobs('receive', $dataSendMail, __('Chúc mừng bạn đã nhận được phần thưởng Minigame!')));
+                $titleMail = ($reward->code == 'FIRST_PRIZE_GOLD') ? 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: quay nhận vàng' : 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: Máy ảnh, đồng hồ, gối chữ U';
+                dispatch(new SendMailJobs('receive', $dataSendMail, $titleMail));
             }
 
             return back()->with('msg_success', '')
@@ -180,6 +181,17 @@ class HomeController extends Controller
             ->where('user_id', $user->id)
             ->where('is_used', false)
             ->get()->count();
+
+        if($openedReward->reward->code != 'LUCKY_MESSAGE'){
+            //Send mail
+            $dataSendMail = [
+                'contact' => $user,
+                'reward' => $openedReward->reward,
+                'sent_at' => now()
+            ];
+            $titleMail = ($openedReward->reward->code == 'FIRST_PRIZE_GOLD') ? 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: quay nhận vàng' : 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: Máy ảnh, đồng hồ, gối chữ U';
+            dispatch(new SendMailJobs('receive', $dataSendMail, $titleMail));
+        }
 
         return Inertia::render('home/ClaimBox', [
             'hasOpened' => (bool)$openedReward,
@@ -242,7 +254,7 @@ class HomeController extends Controller
             'contact' => $data,
             'sent_at' => now()
         ];
-        dispatch(new SendMailJobs('join-now', $dataSendMail, __('Tham gia Minigame thành công!')));
+        dispatch(new SendMailJobs('join-now', $dataSendMail, __('XÁC NHẬN THAM GIA MINIGAME THÀNH CÔNG')));
 
         return to_route('luckyBoxIndex')->with('msg_success', trans('Bạn đã tham gia chương trình thành công!. Chúc bạn may mắn với thẻ quà tặng đã chọn'));
     }
