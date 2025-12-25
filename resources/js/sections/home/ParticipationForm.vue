@@ -2,6 +2,7 @@
 import HomeController from '@/actions/Domains/Web/Http/Controllers/Home/HomeController';
 import InputError from '@/components/ui/InputError.vue';
 import { Form, Link, useForm, usePage } from '@inertiajs/vue3';
+import { watch } from 'vue';
 import { toast } from 'vue-sonner';
 import { ref } from 'vue';
 import {asset} from "@/lib/utils";
@@ -12,6 +13,18 @@ const page = usePage();
 const props = defineProps<Props>();
 const acceptedTerms = ref(false);
 const acceptedProgramRules = ref(false);
+
+watch(acceptedTerms, (newVal) => {
+  if (newVal) {
+    acceptedProgramRules.value = true;
+  }
+});
+
+watch(acceptedProgramRules, (newVal) => {
+  if (newVal) {
+    acceptedTerms.value = true;
+  }
+});
 
 const showNotifyModal = ref(false);
 
