@@ -213,6 +213,15 @@ class HomeController extends Controller
                 ->where('is_used', false)
                 ->first();
             if($exitSpin){
+                //check session đã quên thì lưu lại session
+                $phone = session('lucky_user_phone');
+                if (!$phone) {
+                    session([
+                        'lucky_user_phone' => $exitUser->phone,
+                    ]);
+                    return to_route('home');
+                }
+
                 return to_route('luckyBoxIndex');
             }
             return back()->with([
