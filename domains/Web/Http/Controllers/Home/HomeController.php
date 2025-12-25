@@ -219,9 +219,7 @@ class HomeController extends Controller
                     session([
                         'lucky_user_phone' => $exitUser->phone,
                     ]);
-                    return to_route('home');
                 }
-
                 return to_route('luckyBoxIndex');
             }
             return back()->with([
