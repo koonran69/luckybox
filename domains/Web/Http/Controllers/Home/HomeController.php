@@ -181,16 +181,6 @@ class HomeController extends Controller
             ->where('is_used', false)
             ->get()->count();
 
-        if($openedReward && $openedReward->reward->code != 'LUCKY_MESSAGE'){
-            //Send mail
-            $dataSendMail = [
-                'contact' => $user,
-                'reward' => $openedReward->reward,
-                'sent_at' => now()
-            ];
-            dispatch(new SendMailJobs('receive', $dataSendMail, __('Chúc mừng bạn đã nhận được phần thưởng Minigame!')));
-        }
-
         return Inertia::render('home/ClaimBox', [
             'hasOpened' => (bool)$openedReward,
             'openedReward' => $openedReward,
