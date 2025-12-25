@@ -139,7 +139,7 @@ function submit() {
           <div class="notify-title">
             Cảm ơn bạn đã đồng hành cùng Bamozo!
           </div>
-          <div class="notify-desc">Bamozo đã ghi nhận lượt tham gia của bạn trước đó Cảm ơn bạn đã đồng hành cùng Bamozo!</div>
+          <div class="notify-desc">Bamozo đã ghi nhận lượt tham gia của bạn. Cảm ơn bạn đã đồng hành cùng Bamozo</div>
         </div>
         <div class="notify-modal-footer">
           <a class="btn btn-orange-theme flex-fill text-uppercase" target="_blank" href="https://bamozo.vn/">ĐÃ HIỂU & GHÉ THĂM BAMOZO</a>

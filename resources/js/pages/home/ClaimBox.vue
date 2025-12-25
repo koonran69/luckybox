@@ -30,7 +30,7 @@ const luckyMessages = [
   'Chúc bạn tiền vào cửa trước, tiền lẻn cửa sau, hai cái gặp nhau chui vào két sắt',
   'Chúc bạn gấm vóc lụa là, tay cầm tiền tỉ được làm đại gia',
   'Chúc bạn năm mới đa lộc, đa tài, đa phú quý. Đắc thời, đắc thắng, đắc nhân tâm',
-  'Chúc bạn vạn sự như ý, tỉ sự như mơ, triệu triệu bất ngờ, không chờ cũng đến',
+  'Chúc bạn vạn sự như ý, tỉ sự như mơ, triệu điều bất ngờ, không chờ cũng đến',
   'Chúc bạn tiền vào như nước triều dâng, tiêu hoài không cạn, càng xài càng tăng',
   'Chúc bạn một năm mới hạnh phúc, khum “chằm Zn”, âu lo. Đầu năm phát tài, cuối năm tài vẫn phát',
   'Chúc bạn bầu trời sức khỏe, biển cả tình thương, đại dương tình bạn, sự nghiệp sáng ngời, gia đình thịnh vượng',
@@ -57,8 +57,8 @@ const rewardDesc = computed(() => {
           'Thời gian liên hệ và trao quà dự kiến: trong vòng 7 ngày làm việc kể từ khi kết thúc minigame');
     case 'FIRST_PRIZE_GOLD':
       return `
-        <div>${t('Thời gian quay số: 28/02')}</div>
-        <p style="margin-bottom:0">${t('Công bố trực tiếp tại fanpage chính thức Bamozo\n Người trúng giải sẽ được BTC liên hệ trực tiếp trong vòng 7 ngày làm việc để xác nhận và trao thưởng')}</p>
+        <div class="fw-bold fs-3">${t('Thời gian quay số: 28/02')}</div>
+        <p style="margin-bottom:0">${t('Công bố trực tiếp tại Fanpage chính thức của Bamozo. Người trúng giải sẽ được BTC liên hệ trực tiếp trong vòng 7 ngày làm việc để xác nhận và trao thưởng')}</p>
       `;
     default:
       return null;
