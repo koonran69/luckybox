@@ -58,6 +58,12 @@
             height: auto;
         }
 
+        .card-header .header-content h1 img {
+            max-width: 25px;
+            width: 100%;
+            height: auto;
+        }
+
         .card-header .header-content h1 {
             color: #ef6323;
             font-size: 22px;
