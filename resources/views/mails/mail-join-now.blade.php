@@ -53,6 +53,9 @@
 
         .card-header .header-content img {
             margin-bottom: 6px;
+            max-width: 150px;
+            width: 100%;
+            height: auto;
         }
 
         .card-header .header-content h1 {

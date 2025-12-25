@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d63e38-dc5b-4055-b515-82a8a80bd636" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/domains/Web/Http/Controllers/Home/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mails/mail-join-now.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mails/mail-join-now.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
