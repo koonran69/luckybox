@@ -55,14 +55,9 @@
         .card-header .header-content {
         }
 
-        .card-header .header-content img {
+        .card-header .header-content a img {
             margin-bottom: 6px;
             max-width: 150px;
-            width: 100%;
-            height: auto;
-        }
-
-        .card-header .header-content h1 img {
             width: 100%;
             height: auto;
         }
