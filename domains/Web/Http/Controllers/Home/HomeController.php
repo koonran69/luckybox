@@ -182,13 +182,6 @@ class HomeController extends Controller
     {
         $data = $request->validated();
 
-        //Send mail
-        $dataSendMail = [
-            'contact' => $data,
-            'sent_at' => now()
-        ];
-        dispatch(new SendMailJobs('join-now', $dataSendMail, __('Tham gia Minigame!')));
-dd(123);
         $exitUser = $this->userModel->where('phone', $data['phone'])->orwhere('email', $data['email'])->first();
         if($exitUser){
             return back()->with([
@@ -225,7 +218,12 @@ dd(123);
             'lucky_user_phone' => $user->phone,
         ]);
 
-
+        //Send mail
+        $dataSendMail = [
+            'contact' => $data,
+            'sent_at' => now()
+        ];
+        dispatch(new SendMailJobs('join-now', $dataSendMail, __('Tham gia Minigame!')));
 
         return to_route('luckyBoxIndex')->with('msg_success', trans('Bạn đã tham gia chương trình thành công!. Chúc bạn may mắn với thẻ quà tặng đã chọn'));
     }
