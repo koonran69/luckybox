@@ -190,7 +190,7 @@ onMounted(() => {
                   <div class="reward-desc" v-if="rewardDesc" v-html="rewardDesc"></div>
                 </div>
                 <div class="reward-modal-footer">
-                  <a class="btn btn-orange-theme flex-fill text-uppercase" target="_blank" href="https://bamozo.vn/">{{ t('ĐÃ HIỂU & GHÉ THĂM MAMOZO') }}</a>
+                  <a class="btn btn-orange-theme flex-fill text-uppercase" target="_blank" href="https://bamozo.vn/">{{ t('ĐÃ HIỂU & GHÉ THĂM BAMOZO') }}</a>
                 </div>
               </div>
             </div>
