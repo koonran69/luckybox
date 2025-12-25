@@ -189,7 +189,7 @@
                         </p>
 
                         <p style="text-align:center; margin:24px 0;">
-                            <a href="{{ url('/') }}" class="btn" target="_blank">
+                            <a href="{{ url('/lucky-box') }}" class="btn" target="_blank">
                                 🚀 Chơi ngay
                             </a>
                         </p>
