@@ -147,6 +147,8 @@
                                 src="{{asset('assets/images/banner-final.png')}}"
                                 alt="Minigame Banner"
                                 class="banner"
+                                width="680"
+                                style="width:100%;max-width:680px;display:block;border:0;"
                         >
 
                         <!-- Logo + Title -->
@@ -154,7 +156,7 @@
                             <a target="_blank" href="{{ url('/') }}">
                                 <img src="{{asset('assets/images/logo.png')}}" alt="Minigame">
                             </a>
-                            <h1>🎉 Tham gia thành công!</h1>
+                            <h1><span style="font-size:18px;">🎉</span> Tham gia thành công!</h1>
                         </div>
 
                     </div>
@@ -178,7 +180,7 @@
                         </div>
 
                         <div class="success-box">
-                            🎮 <strong>Bạn đã được cấp:</strong>
+                            <span style="font-size:18px;">🎮</span> <strong>Bạn đã được cấp:</strong>
                             <div class="play-count">
                                 1 lượt chơi
                             </div>
@@ -190,7 +192,7 @@
 
                         <p style="text-align:center; margin:24px 0;">
                             <a href="{{ url('/lucky-box') }}" class="btn" target="_blank">
-                                🚀 Chơi ngay
+                                <span style="font-size:18px;">🚀</span> Chơi ngay
                             </a>
                         </p>
 
@@ -200,7 +202,7 @@
                         </p>
 
                         <p style="margin-top:16px;">
-                            Chúc bạn may mắn 🍀<br>
+                            Chúc bạn may mắn <span style="font-size:18px;">🍀</span><br>
                             <strong>{{ config('app.name') }}</strong>
                         </p>
                     </div>

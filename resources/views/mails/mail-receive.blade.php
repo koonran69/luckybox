@@ -62,7 +62,12 @@
             height: auto;
         }
 
-        .card-header .header-content h1 img, span img {
+        .card-header .header-content h1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        span img{
             max-width: 25px;
             width: 100%;
             height: auto;
@@ -152,14 +157,17 @@
                                 src="{{asset('assets/images/banner-final.png')}}"
                                 alt="Minigame Banner"
                                 class="banner"
+                                width="680"
+                                style="width:100%;max-width:680px;display:block;border:0;"
                         >
 
                         <!-- Logo + Title -->
                         <div class="header-content">
                             <a target="_blank" href="{{ url('/') }}">
-                                <img src="{{asset('assets/images/logo.png')}}" alt="Minigame">
+                                <img src="{{asset('assets/images/logo.png')}}" alt="Minigame" width="150"
+                                     style="width:100%;max-width:150px;height:auto;display:block;margin:0 auto;">
                             </a>
-                            <h1>🎉 Chúc mừng bạn đã nhận được phần thưởng Minigame!</h1>
+                            <h1><span style="font-size:18px;">🎉</span> Chúc mừng bạn đã nhận được phần thưởng Minigame!</h1>
                         </div>
 
                     </div>
@@ -179,7 +187,15 @@
                             @endif
                         </div>
                         <div class="reward-modal-body">
-                            <img src="{{asset($reward['image'])}}" class="reward-image"/>
+                            <img src="{{asset($reward['image'])}}" class="reward-image" width="220"
+                                 style="
+                                    width:100%;
+                                    max-width:220px;
+                                    height:auto;
+                                    display:block;
+                                    margin:0 auto 12px;
+                                    border:0;
+                                "/>
                             <p class="reward-title">
                                 Chúc mừng bạn đã trúng
                             </p>
@@ -189,12 +205,12 @@
                                     @case('SECOND_PRIZE_CAMERA')
                                     @case('THIRD_PRIZE_MIBAND')
                                     @case('CONSOLATION_PILLOW')
-                                        <p> 📞 <strong>BTC Bamozo</strong> sẽ liên hệ qua số điện thoại đã đăng ký để  <strong>xác nhận và hướng dẫn nhận quà</strong>. </p>
-                                        <p style="margin-bottom:0;"> <span>⏰</span> <strong>Thời gian liên hệ và trao quà dự kiến:</strong><br> Trong vòng <strong> 7 ngày làm việc</strong> kể từ khi kết thúc minigame. </p>
+                                        <p><span style="font-size:18px;"> 📞</span> <strong>BTC Bamozo</strong> sẽ liên hệ qua số điện thoại đã đăng ký để  <strong>xác nhận và hướng dẫn nhận quà</strong>. </p>
+                                        <p style="margin-bottom:0;"> <span style="font-size:18px;">⏰</span> <strong>Thời gian liên hệ và trao quà dự kiến:</strong><br> Trong vòng <strong> 7 ngày làm việc</strong> kể từ khi kết thúc minigame. </p>
                                         @break
                                     @case('FIRST_PRIZE_GOLD')
                                         <p> <span>⏰</span> <strong>Thời gian quay số:</strong> 28/02 </p>
-                                        <p style="margin-bottom:0;"> <span>📣</span> Công bố trực tiếp tại <strong>Fanpage chính thức của Bamozo</strong>.<br> Người trúng giải sẽ được BTC liên hệ trực tiếp trong vòng <strong>07 ngày làm việc</strong> để xác nhận và trao thưởng </p>
+                                        <p style="margin-bottom:0;"> <span style="font-size:18px;">📣</span> Công bố trực tiếp tại <strong>Fanpage chính thức của Bamozo</strong>.<br> Người trúng giải sẽ được BTC liên hệ trực tiếp trong vòng <strong>07 ngày làm việc</strong> để xác nhận và trao thưởng </p>
                                         @break
                                 @endswitch
                             </div>
@@ -205,7 +221,7 @@
 
                         <p style="color:#666;"> Thời gian trúng thưởng:{{ $sent_at->timezone('Asia/Ho_Chi_Minh')->format('d/m/Y H:i') }} </p>
 
-                        <p> Một lần nữa xin chúc mừng bạn <span>🎉</span><br> Chúc bạn luôn may mắn và có thật nhiều niềm vui cùng Minigame! </p>
+                        <p> Một lần nữa xin chúc mừng bạn <span style="font-size:18px;">🎉</span><br> Chúc bạn luôn may mắn và có thật nhiều niềm vui cùng Minigame! </p>
 
                         <p> Trân trọng,<br> <strong>{{ config('app.name') }}</strong></p>
                     </div>
