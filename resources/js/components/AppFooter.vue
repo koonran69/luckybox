@@ -36,9 +36,9 @@ import {asset} from "@/lib/utils";
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
-          © Bản quyền thuộc về <span>K - Solutions</span>
-        </div>
+<!--        <div class="footer-bottom">-->
+<!--          © Bản quyền thuộc về <span>K - Solutions</span>-->
+<!--        </div>-->
       </section>
     </footer>
 </template>
@@ -53,12 +53,21 @@ import {asset} from "@/lib/utils";
 .footer-bottom span{
   color: #ef6323;
 }
+
+
 footer {
   border-top: 2px solid #ef6323;
   background-color: #FFF5F2;
-  padding-bottom: 9rem;
+  padding-bottom: 5rem;
   margin-top: 5rem;
 }
+
+@media (max-width: 767px) {
+  footer {
+    padding-bottom: 9rem;
+  }
+}
+
 .footer-body .footer-logo{
   max-width: 120px;
   max-height: 70px;

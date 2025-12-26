@@ -403,7 +403,7 @@ ckfinder_browser.form = ckfinder_browserForm
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:250
+* @see domains/Web/Http/Controllers/Home/HomeController.php:267
 * @route '/'
 */
 export const home = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -418,7 +418,7 @@ home.definition = {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:250
+* @see domains/Web/Http/Controllers/Home/HomeController.php:267
 * @route '/'
 */
 home.url = (options?: RouteQueryOptions) => {
@@ -427,7 +427,7 @@ home.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:250
+* @see domains/Web/Http/Controllers/Home/HomeController.php:267
 * @route '/'
 */
 home.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
@@ -437,7 +437,7 @@ home.get = (options?: RouteQueryOptions): RouteDefinition<'get'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:250
+* @see domains/Web/Http/Controllers/Home/HomeController.php:267
 * @route '/'
 */
 home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
@@ -447,7 +447,7 @@ home.head = (options?: RouteQueryOptions): RouteDefinition<'head'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:250
+* @see domains/Web/Http/Controllers/Home/HomeController.php:267
 * @route '/'
 */
 const homeForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -457,7 +457,7 @@ const homeForm = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:250
+* @see domains/Web/Http/Controllers/Home/HomeController.php:267
 * @route '/'
 */
 homeForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -467,7 +467,7 @@ homeForm.get = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::home
-* @see domains/Web/Http/Controllers/Home/HomeController.php:250
+* @see domains/Web/Http/Controllers/Home/HomeController.php:267
 * @route '/'
 */
 homeForm.head = (options?: RouteQueryOptions): RouteFormDefinition<'get'> => ({
@@ -484,7 +484,7 @@ home.form = homeForm
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitFormParticipation
-* @see domains/Web/Http/Controllers/Home/HomeController.php:192
+* @see domains/Web/Http/Controllers/Home/HomeController.php:202
 * @route '/submit-form-participation'
 */
 export const submitFormParticipation = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -499,7 +499,7 @@ submitFormParticipation.definition = {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitFormParticipation
-* @see domains/Web/Http/Controllers/Home/HomeController.php:192
+* @see domains/Web/Http/Controllers/Home/HomeController.php:202
 * @route '/submit-form-participation'
 */
 submitFormParticipation.url = (options?: RouteQueryOptions) => {
@@ -508,7 +508,7 @@ submitFormParticipation.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitFormParticipation
-* @see domains/Web/Http/Controllers/Home/HomeController.php:192
+* @see domains/Web/Http/Controllers/Home/HomeController.php:202
 * @route '/submit-form-participation'
 */
 submitFormParticipation.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -518,7 +518,7 @@ submitFormParticipation.post = (options?: RouteQueryOptions): RouteDefinition<'p
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitFormParticipation
-* @see domains/Web/Http/Controllers/Home/HomeController.php:192
+* @see domains/Web/Http/Controllers/Home/HomeController.php:202
 * @route '/submit-form-participation'
 */
 const submitFormParticipationForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -528,7 +528,7 @@ const submitFormParticipationForm = (options?: RouteQueryOptions): RouteFormDefi
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitFormParticipation
-* @see domains/Web/Http/Controllers/Home/HomeController.php:192
+* @see domains/Web/Http/Controllers/Home/HomeController.php:202
 * @route '/submit-form-participation'
 */
 submitFormParticipationForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -621,7 +621,7 @@ luckyBoxIndex.form = luckyBoxIndexForm
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitOpenBox
-* @see domains/Web/Http/Controllers/Home/HomeController.php:35
+* @see domains/Web/Http/Controllers/Home/HomeController.php:34
 * @route '/submit-open-box'
 */
 export const submitOpenBox = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -636,7 +636,7 @@ submitOpenBox.definition = {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitOpenBox
-* @see domains/Web/Http/Controllers/Home/HomeController.php:35
+* @see domains/Web/Http/Controllers/Home/HomeController.php:34
 * @route '/submit-open-box'
 */
 submitOpenBox.url = (options?: RouteQueryOptions) => {
@@ -645,7 +645,7 @@ submitOpenBox.url = (options?: RouteQueryOptions) => {
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitOpenBox
-* @see domains/Web/Http/Controllers/Home/HomeController.php:35
+* @see domains/Web/Http/Controllers/Home/HomeController.php:34
 * @route '/submit-open-box'
 */
 submitOpenBox.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => ({
@@ -655,7 +655,7 @@ submitOpenBox.post = (options?: RouteQueryOptions): RouteDefinition<'post'> => (
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitOpenBox
-* @see domains/Web/Http/Controllers/Home/HomeController.php:35
+* @see domains/Web/Http/Controllers/Home/HomeController.php:34
 * @route '/submit-open-box'
 */
 const submitOpenBoxForm = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
@@ -665,7 +665,7 @@ const submitOpenBoxForm = (options?: RouteQueryOptions): RouteFormDefinition<'po
 
 /**
 * @see \Domains\Web\Http\Controllers\Home\HomeController::submitOpenBox
-* @see domains/Web/Http/Controllers/Home/HomeController.php:35
+* @see domains/Web/Http/Controllers/Home/HomeController.php:34
 * @route '/submit-open-box'
 */
 submitOpenBoxForm.post = (options?: RouteQueryOptions): RouteFormDefinition<'post'> => ({
