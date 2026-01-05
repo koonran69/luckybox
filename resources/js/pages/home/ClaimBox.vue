@@ -58,7 +58,7 @@ const rewardDesc = computed(() => {
     case 'FIRST_PRIZE_GOLD':
       return `
         <div class="fw-bold fs-3">${t('Thời gian quay số: 28/02')}</div>
-        <p style="margin-bottom:0">${t('Công bố trực tiếp tại Fanpage chính thức của Bamozo. Người trúng giải sẽ được BTC liên hệ trực tiếp trong vòng 7 ngày làm việc để xác nhận và trao thưởng')}</p>
+        <p style="margin-bottom:0">${t('Giải nhất được xác định thông qua hình thức quay số từ danh sách khách hàng nhận được vé tham gia. Theo dõi thông tin trực tiếp tại Fanpage chính thức của Bamozo.')}</p>
       `;
     default:
       return null;
@@ -186,7 +186,7 @@ onMounted(() => {
                   <div class="reward-title">
                     {{ currentReward?.reward?.code === 'LUCKY_MESSAGE' ? t('Chúc mừng bạn đã') : t('Chúc mừng bạn đã trúng') }}
                   </div>
-                  <div class="reward-name">{{ currentReward?.reward?.name }}</div>
+                  <div class="reward-name">{{ currentReward?.reward?.code === 'FIRST_PRIZE_GOLD' ? '01 vé tham gia quay trúng thưởng - Giải nhất 02 chỉ vàng' : currentReward?.reward?.name }}</div>
                   <div class="reward-desc" v-if="rewardDesc" v-html="rewardDesc"></div>
                 </div>
                 <div class="reward-modal-footer">
