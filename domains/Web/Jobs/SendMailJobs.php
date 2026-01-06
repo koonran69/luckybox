@@ -38,17 +38,10 @@ class SendMailJobs implements ShouldQueue
         $templateMail = 'mails.mail-' . $template;
         $emailTo = $data['contact']['email'];
 
-        try {
-            Mail::send($templateMail, $data, function ($msg) use ($data, $title, $emailTo) {
-                $msg->from(env('MAIL_FROM_ADDRESS', 'no-reply@gmail.com'), env('MAIL_FROM_NAME', 'Bamozo'));
+        Mail::send($templateMail, $data, function ($msg) use ($data, $title, $emailTo) {
+            $msg->from(env('MAIL_FROM_ADDRESS', 'no-reply@gmail.com'), env('MAIL_FROM_NAME', 'Bamozo'));
 
-                $msg->to($emailTo)->subject($title);
-            });
-            return true;
-        } catch (\Exception $e) {
-            Log::error($e->getMessage());
-            return false;
-        }
-
+            $msg->to($emailTo)->subject($title);
+        });
     }
 }
