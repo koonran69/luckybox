@@ -181,15 +181,15 @@ class HomeController extends Controller
             ->where('is_used', false)
             ->get()->count();
 
-        if($openedReward && $openedReward->reward->code != 'LUCKY_MESSAGE'){
-            $dataSendMail = [
-                'contact' => $user,
-                'reward' => $openedReward->reward,
-                'sent_at' => now()
-            ];
-            $titleMail = ($openedReward->reward->code == 'FIRST_PRIZE_GOLD') ? 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: quay nhận vàng' : 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: Máy ảnh, đồng hồ, gối chữ U';
-            dispatch(new SendMailJobs('receive', $dataSendMail, $titleMail));
-        }
+//        if($openedReward && $openedReward->reward->code != 'LUCKY_MESSAGE'){
+//            $dataSendMail = [
+//                'contact' => $user,
+//                'reward' => $openedReward->reward,
+//                'sent_at' => now()
+//            ];
+//            $titleMail = ($openedReward->reward->code == 'FIRST_PRIZE_GOLD') ? 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: quay nhận vàng' : 'XÁC NHẬN TRÚNG GIẢI - dành cho quà: Máy ảnh, đồng hồ, gối chữ U';
+//            dispatch(new SendMailJobs('receive', $dataSendMail, $titleMail));
+//        }
 
         return Inertia::render('home/ClaimBox', [
             'hasOpened' => (bool)$openedReward,
