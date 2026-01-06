@@ -36,6 +36,10 @@ class SendMailJobs implements ShouldQueue
         $data = $this->data;
         $title = $this->title;
         $templateMail = 'mails.mail-' . $template;
+
+        if (!isset($data['contact']['email'])) {
+            throw new \Exception('Email recipient not found');
+        }
         $emailTo = $data['contact']['email'];
 
         Mail::send($templateMail, $data, function ($msg) use ($data, $title, $emailTo) {
