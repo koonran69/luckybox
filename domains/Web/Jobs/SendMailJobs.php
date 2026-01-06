@@ -37,13 +37,26 @@ class SendMailJobs implements ShouldQueue
         $title = $this->title;
         $templateMail = 'mails.mail-' . $template;
 
+        try {
+            view($templateMail, $data)->render();
+        } catch (\Throwable $e) {
+            Log::error('MAIL VIEW ERROR', [
+                'view' => $templateMail,
+                'error' => $e->getMessage(),
+            ]);
+            return;
+        }
+
         if (!isset($data['contact']['email'])) {
             throw new \Exception('Email recipient not found');
         }
         $emailTo = $data['contact']['email'];
 
-        Mail::send($templateMail, $data, function ($msg) use ($data, $title, $emailTo) {
-            $msg->from(env('MAIL_FROM_ADDRESS', 'no-reply@gmail.com'), env('MAIL_FROM_NAME', 'Bamozo'));
+        Mail::send($templateMail, $data, function ($msg) use ($title, $emailTo) {
+            $msg->from(
+                config('mail.from.address'),
+                config('mail.from.name')
+            );
 
             $msg->to($emailTo)->subject($title);
         });

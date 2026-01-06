@@ -37,7 +37,7 @@
                 <div class="tab-content">
                     <div id="formatOnline" class="tab-pane active show p-3">
                         <div class="mb-3">
-                            <x-input-checkbox name="course_format[{{ $keyOnline }}][is_enable]" value="1" :label="trans('Bật')" />
+                            <x-core-input-checkbox name="course_format[{{ $keyOnline }}][is_enable]" value="1" :label="trans('Bật')" />
                         </div>
 
                         <div class="row mb-3">
@@ -49,7 +49,7 @@
                     </div>
                     <div id="formatOffline" class="tab-pane p-3">
                         <div class="mb-3">
-                            <x-input-checkbox name="course_format[{{ $keyOffline }}][is_enable]" value="1" :label="trans('Bật')" />
+                            <x-core-input-checkbox name="course_format[{{ $keyOffline }}][is_enable]" value="1" :label="trans('Bật')" />
                         </div>
 
                         <div class="row mb-3">
@@ -67,7 +67,7 @@
                     </div>
                     <div id="formatVideo" class="tab-pane show p-3">
                         <div class="mb-3">
-                            <x-input-checkbox name="course_format[{{ $keyVideo }}][is_enable]" value="1" :label="trans('Bật')" />
+                            <x-core-input-checkbox name="course_format[{{ $keyVideo }}][is_enable]" value="1" :label="trans('Bật')" />
                         </div>
 
                         <div class="row mb-3">

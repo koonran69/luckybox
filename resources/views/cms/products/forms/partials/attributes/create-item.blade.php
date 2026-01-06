@@ -28,7 +28,7 @@
         <div class="accordion-body">
             <x-select class="select2-bs5 sel-attr" name="attribute[{{ $attribute->id }}][]" :multiple="true">
                 @foreach ($attribute->values as $item)
-                    <x-select-option :value="$item->id" :title="$item->name" />
+                    <x-core-select-option :value="$item->id" :title="$item->name" />
                 @endforeach
             </x-select>
         </div>

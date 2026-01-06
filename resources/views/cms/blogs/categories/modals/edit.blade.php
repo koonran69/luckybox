@@ -27,9 +27,9 @@
                             <div class="mb-3">
                                 <label class="form-label">@lang('parent'):</label>
                                 <x-select class="select2-bs5" name="parent_id">
-                                    <x-select-option value="" :title="__('empty')" />
+                                    <x-core-select-option value="" :title="__('empty')" />
                                     @foreach ($categories as $category)
-                                        <x-select-option :value="$category->id"
+                                        <x-core-select-option :value="$category->id"
                                             :title="generate_text_depth_tree($category->depth) . ' ' . __($category->name)"
                                         />
                                     @endforeach
@@ -39,7 +39,7 @@
                         {{-- <div class="col-md-6 col-12">
                             <div class="mb-3">
                                 <label class="form-label">@lang('Thumbnail')</label>
-                                <x-input-image-ckfinder name="feature_image" :value="$data->feature_image" showImage="featureImage" />
+                                <x-core-input-image-ckfinder name="feature_image" :value="$data->feature_image" showImage="featureImage" />
                             </div>
                         </div> --}}
                     </div>

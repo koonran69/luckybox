@@ -22,7 +22,7 @@
         <div class="card-body p-2">
             <x-select name="product[status]" :required="true">
                 @foreach ($status as $key => $value)
-                    <x-select-option :value="$key" :title="$value" />
+                    <x-core-select-option :value="$key" :title="$value" />
                 @endforeach
             </x-select>
         </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="card-body p-2 wrap-list-checkbox">
             @foreach ($categories as $category)
-                <x-input-checkbox :depth="$category->depth" name="categories_id[]" :label="$category->translation->name" :value="$category->id" />
+                <x-core-input-checkbox :depth="$category->depth" name="categories_id[]" :label="$category->translation->name" :value="$category->id" />
             @endforeach
         </div>
     </div>
@@ -44,7 +44,7 @@
             @lang('Thumbnail')
         </div>
         <div class="card-body">
-            <x-input-image-ckfinder name="product[thumbnail]" showImage="thumbmail" />
+            <x-core-input-image-ckfinder name="product[thumbnail]" showImage="thumbmail" />
         </div>
     </div>
 
@@ -53,7 +53,7 @@
             @lang('Gallery')
         </div>
         <div class="card-body">
-            <x-input-gallery-ckfinder name="product[gallery]" showImage="gallery" />
+            <x-core-input-gallery-ckfinder name="product[gallery]" showImage="gallery" />
         </div>
     </div>
 </div>

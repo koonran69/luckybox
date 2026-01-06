@@ -1,5 +1,6 @@
 <?php
 
+use Domains\Web\Jobs\SendMailJobs;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(Domains\Localization\Http\Middleware\SetLocaleMiddleware::class)->group(function() {

@@ -9,9 +9,9 @@
                 <div class="col-6 col-md-4">
                     <x-input type="hidden" name="variant[{{ $key }}][attribute][{{ $attr->id }}][attribute_id]" :value="$attr->id" />
                     <x-select name="variant[{{ $key }}][attribute][{{ $attr->id }}][attribute_value_id]">
-                        <x-select-option value="" :title="trans('Bất kỳ :attr', ['attr' => $attr->name])" />
+                        <x-core-select-option value="" :title="trans('Bất kỳ :attr', ['attr' => $attr->name])" />
                         @foreach ($attr->values as $item )
-                            <x-select-option :value="$item->id" :title="$item->name" />
+                            <x-core-select-option :value="$item->id" :title="$item->name" />
                         @endforeach
                     </x-select>
                 </div>
@@ -41,7 +41,7 @@
         <div class="accordion-body">
             <div class="row mb-3">
                 <div class="col-12 col-md-4">
-                    <x-input-image-ckfinder name="variant[{{ $key }}][thumbnail]" showImage="variantThumbnail{{ $key }}" />
+                    <x-core-input-image-ckfinder name="variant[{{ $key }}][thumbnail]" showImage="variantThumbnail{{ $key }}" />
                 </div>
                 <div class="col-12 col-md-8">
                     <div class="mb-3">
@@ -64,19 +64,19 @@
             <div class="row">
                 <div class="col-12 col-md-4">
                     <label class="form-label">@lang('Cân nặng(kg)')</label>
-                    <x-input-number min="0" name="variant[{{ $key }}][weight]" :placeholder="trans('0')" />
+                    <x-core-input-number min="0" name="variant[{{ $key }}][weight]" :placeholder="trans('0')" />
                 </div>
                 <div class="col-12 col-md-8">
                     <label class="form-label">@lang('Kích thước(cm)')</label>
                     <div class="d-flex gap-1">
                         <div class="">
-                            <x-input-number min="0" name="variant[{{ $key }}][length]" :placeholder="trans('Dài')" />
+                            <x-core-input-number min="0" name="variant[{{ $key }}][length]" :placeholder="trans('Dài')" />
                         </div>
                         <div class="">
-                            <x-input-number min="0" name="variant[{{ $key }}][width]" :placeholder="trans('Rộng')" />
+                            <x-core-input-number min="0" name="variant[{{ $key }}][width]" :placeholder="trans('Rộng')" />
                         </div>
                         <div class="">
-                            <x-input-number min="0" name="variant[{{ $key }}][height]" :placeholder="trans('Cao')" />
+                            <x-core-input-number min="0" name="variant[{{ $key }}][height]" :placeholder="trans('Cao')" />
                         </div>
                     </div>
                 </div>

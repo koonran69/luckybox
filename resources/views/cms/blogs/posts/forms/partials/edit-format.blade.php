@@ -38,7 +38,7 @@
                     <div id="formatOnline" class="tab-pane active show p-3">
                         <x-input type="hidden" name="course_format[{{ $keyOnline }}][id]" :value="$format_online->id" />
                         <div class="mb-3">
-                            <x-input-checkbox :checked="$format_online->is_enable" name="course_format[{{ $keyOnline }}][is_enable]" value="1" :label="trans('Bật')" />
+                            <x-core-input-checkbox :checked="$format_online->is_enable" name="course_format[{{ $keyOnline }}][is_enable]" value="1" :label="trans('Bật')" />
                         </div>
 
                         <div class="row mb-3">
@@ -58,7 +58,7 @@
                             :value="$format_offline->id" 
                         />
                         <div class="mb-3">
-                            <x-input-checkbox :checked="$format_offline->is_enable" 
+                            <x-core-input-checkbox :checked="$format_offline->is_enable"
                                 name="course_format[{{ $keyOffline }}][is_enable]" 
                                 value="1" 
                                 :label="trans('Bật')" 
@@ -92,7 +92,7 @@
                             :value="$format_video->id" 
                         />
                         <div class="mb-3">
-                            <x-input-checkbox :checked="$format_video->is_enable" 
+                            <x-core-input-checkbox :checked="$format_video->is_enable"
                                 name="course_format[{{ $keyVideo }}][is_enable]" 
                                 value="1" 
                                 :label="trans('Bật')" 
@@ -117,7 +117,7 @@
                                     data-url="{{ route('cms.lecture_material.select2') }}"
                                 >
                                     @if ($format_video)
-                                        <x-select-option :selected="$format_video->lecture_material_id" :value="$format_video->lecture_material_id" :title="$format_video->lectureMaterial->name" />
+                                        <x-core-select-option :selected="$format_video->lecture_material_id" :value="$format_video->lecture_material_id" :title="$format_video->lectureMaterial->name" />
                                     @endif
                                 </x-select>
                             </div>

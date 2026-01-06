@@ -18,16 +18,16 @@
                             <label class="form-label required">@lang('Trạng thái')</label>
                             <x-select name="status" :required="true">
                                 @foreach ($status as $key => $value)
-                                    <x-select-option :value="$key" :title="$value" />
+                                    <x-core-select-option :value="$key" :title="$value" />
                                 @endforeach
                             </x-select>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">@lang('Danh mục cha'):</label>
                             <x-select class="select2-bs5" name="parent_id">
-                                <x-select-option value="" :title="__('Trống')" />
+                                <x-core-select-option value="" :title="__('Trống')" />
                                 @foreach ($categories as $category)
-                                    <x-select-option :value="$category->id"
+                                    <x-core-select-option :value="$category->id"
                                         :title="str_repeat('-', $category->depth) . ' ' . $category->name"
                                     />
                                 @endforeach
@@ -36,7 +36,7 @@
                         <div class="col-md-6 col-12">
                             <div class="mb-3">
                                 <label class="form-label">@lang('Thumbnail')</label>
-                                <x-input-image-ckfinder name="thumbnail" showImage="thumbnail" />
+                                <x-core-input-image-ckfinder name="thumbnail" showImage="thumbnail" />
                             </div>
                         </div>
                     </div>
